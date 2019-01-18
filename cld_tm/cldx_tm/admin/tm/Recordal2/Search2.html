@@ -1,0 +1,118 @@
+﻿<div ui-view>
+
+
+
+
+    <form class="form-login" role="form">
+
+        <div style="width:70%; margin:auto; height:auto">
+
+            <div style="top: 0; width: 80%; height:  auto; margin:  auto;">
+                <div class="pageheader blue"><p style="height: 100%; font-size: 18px">STEP 1 SEARCH TRANSACTION</p></div>
+                <table class="table table-responsive table-bordered ">
+                    <tr>
+                        <td style="align-content:center">
+
+                            <div class="col-sm-9">
+                                <div>
+                                    <label>
+                                        <input type="radio" ng-model="formData.Searchname" ng-change='newValue(value)' value="rtm">
+                                        Search Using Online No
+                                    </label>
+                                    <label>
+                                        <input type="radio" ng-model="formData.Searchname" ng-change='newValue(value)' value="file">
+                                        Search Using File/Tp No
+                                    </label>
+
+                                </div>
+                            </div>
+
+                        </td>
+
+                        <td>
+                            <input type="text" ng-model="formData.OnlineNumber" data-tooltip="sticky1" ng-show="formData.checked" class="form-control" id="OnlineNumber" placeholder="OnlineNumber">
+                            <input type="text" ng-model="formData.OnlineNumber" data-tooltip="mystickytooltip2" ng-show="formData.checked2" class="form-control" id="OnlineNumber2" placeholder="File/Tp Number">
+
+
+                        </td>
+
+                        <td>
+
+
+                            <button type="button" ng-click="add()" class="btn   btn-info "><i class="fa fa-search"></i>Search</button>
+
+                        </td>
+
+                    </tr>
+
+
+                </table>
+              
+
+            </div>
+
+            <!--<table st-table="displayedCollection" st-safe-src="ListAgent" class="table form table-responsive    table-striped">
+                <thead>
+                    <tr>
+
+
+
+                        <th st-sort="" class="tbbg2">TRANSACTION ID</th>
+                        <th st-sort="" class="tbbg2">FILE NUMBER</th>
+                        <th st-sort="" class="tbbg2"> TITLE</th>
+                        <th st-sort="" class="tbbg2">REGISTRATION DATE</th>
+
+
+
+
+
+
+                        <th class="tbbg2">NEXT</th>
+
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr ng-repeat="row in displayedCollection">
+
+
+
+
+                        <td>{{row.oai_no}}</td>
+                        <td>{{row.reg_no}}</td>
+                        <td>{{row.tm_title}}</td>
+                        <td>{{row.reg_date}}</td>
+
+
+
+
+
+
+                        <td align="center">
+
+                            <a ng-click="add2(row); $event.preventDefault(); $event.stopPropagation();" class="icon-bar" href="#"> <i class="fa fa-arrow-right "></i></a>
+                        </td>
+
+
+
+
+
+
+
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="10" class="text-center">
+                            <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="7"></div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>-->
+            <input id="xname" name="xname" type="hidden" runat="server" />
+            <input id="vamount" name="vamount" type="hidden" runat="server" />
+            <input id="vtranid" name="vtranid" type="hidden" runat="server" />
+
+    </form>
+</div>

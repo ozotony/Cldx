@@ -1,0 +1,207 @@
+﻿
+/******************************UserControl: Message*******************/
+.message-box {
+    width: 270px;
+    display: inline;
+    height: auto;
+    padding: 30px 20px;
+    position: fixed;
+    right: -420px;
+    top: 50px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.close-btn {
+    position: absolute;
+    right: 6px;
+    top: 10px;
+    cursor: pointer;
+}
+
+    .close-btn:hover {
+        opacity: 0.7;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+        filter: alpha(opacity=70);
+    }
+
+.message {
+    width: 100%;
+}
+
+.success {
+    background-color: #72A101;
+    border: 2px solid #4d6d01;
+}
+
+.error {
+    background-color: #d04a01;
+    border: 2px solid #983600;
+}
+
+.info {
+    background-color: #0285c2;
+    border: 2px solid #00577f;
+}
+
+/******************************Default Page*******************/
+
+.header2 {
+    background-color: #0165A5;
+    height: 65px;
+    margin-top: 15px;
+}
+
+    .header2 h5 {
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+    }
+
+/*.body {
+    margin-top: 30px;
+}*/
+
+.button-area {
+    border: 1px solid #0165A5;
+    height: 100px;
+    padding: 10px;
+    width: 355px;
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-left: 288px;
+}
+
+    .button-area h6 {
+        margin-bottom: 10px;
+        color: #0165A5;
+    }
+
+
+.btn {
+    background-color: rgba(182, 182, 182, 0.7);
+    background-image: none;
+    background-repeat: no-repeat;
+    border: 2px solid #CCCCCC;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    color: #000000;
+    filter: none;
+    text-shadow: none;
+    padding: 8px 18px;
+    width: 110px;
+}
+
+    .btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+        background-color: #E6E6E6;
+    }
+
+    .btn:active, .btn.active {
+        background-color: #CCCCCC;
+    }
+
+    .btn:first-child {
+    }
+
+    .btn:hover {
+        background-color: rgba(205, 205, 205, 0.82);
+        border-color: rgba(205, 205, 205, 0.82);
+        transition: none 0s ease 0s;
+    }
+
+    .btn:focus {
+        box-shadow: none;
+        outline: 0 none;
+    }
+
+    .btn.active, .btn:active {
+        background-color: #000000;
+        border-color: #000000;
+        color: #FFFFFF;
+    }
+
+    .btn.disabled, .btn[disabled] {
+        background-color: rgba(202, 202, 202, 0.4);
+        border-color: rgba(0, 0, 0, 0.08);
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+
+.btn-success {
+    background-color: #72A101;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-color: #4d6d01;
+    color: #ffffff;
+    filter: none;
+    font-family: open sans;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+    .btn-success:hover, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
+        background-color: #85bc01;
+        border-color: #72A101;
+        color: #4d6d01;
+    }
+
+    .btn-success:active, .btn-success.active {
+        background-color: #72A101;
+        border-color: #4d6d01;
+    }
+
+
+.btn-error {
+    background-color: #d04a01;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-color: #983600;
+    color: #ffffff;
+    filter: none;
+    font-family: open sans;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+    .btn-error:hover, .btn-error:active, .btn-error.active, .btn-error.disabled, .btn-error[disabled] {
+        background-color: #ee5502;
+        border-color: #983600;
+        color: #983600;
+    }
+
+    .btn-error:active, .btn-error.active {
+        background-color: #d04a01;
+        border-color: #983600;
+    }
+
+
+
+.btn-info {
+    background-color: #0285c2;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-color: #00577f;
+    color: #ffffff;
+    filter: none;
+    font-family: open sans;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+    .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
+        background-color: #02a2ed;
+        border-color: #0285c2;
+        color: #00577f;
+    }
+
+    .btn-info:active, .btn-info.active {
+        background-color: #0285c2;
+        border-color: #00577f;
+    }

@@ -1,0 +1,79 @@
+﻿<div ui-view>
+
+
+
+
+    <form class="form-login" role="form">
+
+        <div style="width:70%; margin:auto; height:auto">
+
+            <div style="top: 0; width: 80%; height:  auto; margin:  auto;">
+                <div class="pageheader blue"><p style="height: 100%; font-size: 18px">STEP 2  MIGRATE RECORD</p></div>
+              
+                <table st-table="displayedCollection" st-safe-src="ListAgent" class="table form table-responsive    table-striped">
+                    <thead>
+                        <tr>
+
+
+
+                            <th st-sort="" class="tbbg2">TRANSACTION ID</th>
+                            <th st-sort="" class="tbbg2">FILE NUMBER</th>
+                            <th st-sort="" class="tbbg2"> TITLE</th>
+                            <th st-sort="" class="tbbg2">REGISTRATION DATE</th>
+
+
+
+
+
+
+                            <th class="tbbg2">CLICK TO MIGRATE</th>
+
+
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="row in displayedCollection">
+
+
+
+
+                            <td>{{row.oai_no}}</td>
+                            <td>{{row.reg_no}}</td>
+                            <td>{{row.tm_title}}</td>
+                            <td>{{row.reg_date}}</td>
+
+
+
+
+
+
+                            <td align="center">
+
+                                <a ng-click="add2(row); $event.preventDefault(); $event.stopPropagation();" class="icon-bar" href="#"> <i class="fa fa-arrow-right "></i></a>
+                            </td>
+
+
+
+
+
+
+
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="10" class="text-center">
+                                <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="7"></div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+
+          
+          
+
+    </form>
+</div>

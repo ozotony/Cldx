@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://miscellaneous" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://rpc.xml.coldfusion" xmlns:impl="http://miscellaneous" targetNamespace="http://miscellaneous" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://rpc.xml.coldfusion">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="CFCInvocationException">
+        <xsd:sequence />
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CFCInvocationException">
+    <wsdl:part name="fault" type="tns1:CFCInvocationException" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTransactionResponse">
+    <wsdl:part name="UpdateTransactionReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTransactionRequest">
+    <wsdl:part name="TransactionID" type="xsd:string" />
+    <wsdl:part name="Gateway" type="xsd:string" />
+    <wsdl:part name="StatusCode" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="Gateway">
+    <wsdl:operation name="UpdateTransaction" parameterOrder="TransactionID Gateway StatusCode">
+      <wsdl:input name="UpdateTransactionRequest" message="impl:UpdateTransactionRequest" />
+      <wsdl:output name="UpdateTransactionResponse" message="impl:UpdateTransactionResponse" />
+      <wsdl:fault name="CFCInvocationException" message="impl:CFCInvocationException" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="gateway.cfcSoapBinding" type="impl:Gateway">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="UpdateTransaction">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="UpdateTransactionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://miscellaneous" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="UpdateTransactionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://miscellaneous" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault use="encoded" name="CFCInvocationException" namespace="http://miscellaneous" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GatewayService">
+    <wsdl:port name="gateway.cfc" binding="impl:gateway.cfcSoapBinding">
+      <wsdlsoap:address location="http://www.iponigeria.com/miscellaneous/gateway.cfc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

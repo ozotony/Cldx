@@ -1,0 +1,15 @@
+
+html, body
+    {
+        margin-top:0px;
+        margin-bottom:0px;
+        margin-left:10px;
+        margin-right:10px;
+    }
+table {
+     margin-top:0px;
+}
+#registrar_c_data_details1_tm_img {
+    height:100px;
+
+}

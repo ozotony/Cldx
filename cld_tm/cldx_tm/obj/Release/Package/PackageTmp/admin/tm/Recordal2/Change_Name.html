@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="formApp">
+<head>
+    <title></title>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+    <script src="../../../Scripts/angular.js"></script>
+    <script src="../../../Scripts/angular-animate.js"></script>
+   
+    <script src="../../../Scripts/angular-ui-router.min.js"></script>
+  
+    <script src="../../../Scripts/App.js"></script>
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../../css/animate.css" rel="stylesheet" />
+    <script src="../../../js/loading-bar.js"></script>
+    <link href="../../../css/loading-bar.css" rel="stylesheet" />
+    <link href="../../../css/sweet-alert.css" rel="stylesheet" />
+    <script src="../../../js/sweet-alert.min.js"></script>
+
+    <style type="text/css">
+        .sidebar {
+            padding-top: 2px;
+        }
+    </style>
+    <style>
+        .pageheader {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            color: #fff;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            background: #006699;
+            text-align: center;
+        }
+
+        .btn-default {
+            background-color: #006699;
+            color: #fff;
+            padding: 10px;
+        }
+
+        body {
+            font-family: Calibri;
+        }
+    </style>
+
+   
+</head>
+<body>
+    <form id="form1">
+        <div>
+            <div class="header">
+                <div class="leftholder">
+                </div>
+                <div class="xmenu">
+                    <div class="xmenu_m">
+                        <div class="xmenu_ml">
+                        </div>
+                        <div class="xmenu_mm">
+                            <div class="menu">
+                                <ul>
+                                    <li>
+                                        <a href="../lo.aspx">
+                                            <img alt="" src="../../../images/logoff.png" width="16" height="16" />Log off
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="xmenu_mr">
+                        </div>
+                    </div>
+                </div>
+                <div class="xlogoleftholder">
+                </div>
+                <div class="xlogo">
+                    <div class="xlogo_l">
+                    </div>
+                    <div class="xlogo_r">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sidebar">
+                    <a href="./profile.aspx">PROFILE</a>
+
+
+                </div>
+                <div class="content">
+
+                    <div ui-view></div>
+
+                   
+
+
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

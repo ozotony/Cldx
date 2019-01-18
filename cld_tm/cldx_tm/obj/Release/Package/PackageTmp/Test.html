@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Detect Popup Blocker using Javascript: devzone.co.in</title>
+    <script>
+        function checkPopup2() {
+            var dd = checkPopup();
+
+            alert(dd)
+            if (dd=="false") {
+
+                alert("A popup blocker was detected. Please Remove popupblocker for this site");
+            }
+
+            else {
+
+                alert("Non  popup blocker was detected.");
+            }
+            
+        }
+
+
+ function checkPopup() {
+     var openWin = window.open("www.cnn.com", "directories=no,height=100,width=100,menubar=no,resizable=no,scrollbars=no,status=no,titlebar=no,top=0,location=no");
+    
+     if (!openWin) {
+    //  alert("A popup blocker was detected. Please Remove popupblocker for this site");
+      return "false"
+    } else {
+    openWin.close();
+   
+
+    return "true"
+   }
+}
+window.onload = checkPopup2;
+    </script>
+
+</head>
+<body>
+</body>
+
+</html>

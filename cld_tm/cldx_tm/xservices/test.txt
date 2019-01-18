@@ -1,0 +1,3 @@
+WINDOWS-GCTG5NT\SQLSERVER12X
+
+http://windows-gctg5nt:8080/tfs

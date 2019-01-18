@@ -1,0 +1,99 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+  font-family: 'Open Sans',Helvetica Neue,Lucida Grande,Arial,Helvetica,Verdana,sans-serif;
+  font-weight: 100;
+  font-size:15px;
+}
+
+pre,
+code {
+  font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace;
+}
+
+hr {
+  border: 0 solid #ccc;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+  font-size: 125px;
+  font-weight: 400;
+  letter-spacing:-8px;
+  word-spacing: -15px;
+}
+
+h2 {
+  font-size: 65px;
+  font-weight: 300;
+  letter-spacing:-2px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 25px;
+  font-weight:300;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight:300;
+}
+p {
+    font-size: 16px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UpdateHwallet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="used_status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="used_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="product_title" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateHwalletResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateHwalletResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UpdateHwalletSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateHwallet" />
+  </wsdl:message>
+  <wsdl:message name="UpdateHwalletSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateHwalletResponse" />
+  </wsdl:message>
+  <wsdl:portType name="payxSoap">
+    <wsdl:operation name="UpdateHwallet">
+      <wsdl:input message="tns:UpdateHwalletSoapIn" />
+      <wsdl:output message="tns:UpdateHwalletSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="payxSoap" type="tns:payxSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateHwallet">
+      <soap:operation soapAction="http://tempuri.org/UpdateHwallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="payxSoap12" type="tns:payxSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateHwallet">
+      <soap12:operation soapAction="http://tempuri.org/UpdateHwallet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="payx">
+    <wsdl:port name="payxSoap" binding="tns:payxSoap">
+      <soap:address location="http://tm.cldng.com/xtm/xservices/payx.asmx" />
+    </wsdl:port>
+    <wsdl:port name="payxSoap12" binding="tns:payxSoap12">
+      <soap12:address location="http://tm.cldng.com/xtm/xservices/payx.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

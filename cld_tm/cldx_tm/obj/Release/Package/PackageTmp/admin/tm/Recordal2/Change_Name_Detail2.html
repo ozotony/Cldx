@@ -1,0 +1,94 @@
+﻿<div ui-view>
+
+
+
+
+    <form class="form-login" role="form">
+
+        <div style="width:40%; margin:auto; height:auto">
+
+            <div style="top: 0; width: 80%; height:  auto; margin:  auto;">
+                <div class="pageheader blue"><p style="height: 100%; font-size: 18px">STEP 2 SEARCH TRANSACTION </p></div>
+
+                <div class="form-group">
+                    <label for="email">Enter Online Transaction Id</label>
+                    <div>
+                        <input type="text" ng-model="formData.OnlineNumber" id="payref" class="form-control" />
+
+                    </div>
+                </div>
+              
+                <div class="form-group" style="text-align: center; padding-top: 10px">
+                    <button type="button" ng-click="add3()" class="btn   btn-info "><i class="fa fa-search"></i>Search</button>
+                    <!--<input type="submit" value="Update Record" ng-click="submitForm()" class="btn btn-default" />-->
+                </div>
+
+            </div>
+
+            <table st-table="displayedCollection2" st-safe-src="ListAgent" class="table form table-responsive    table-striped">
+                <thead>
+                    <tr>
+
+
+
+                        <th st-sort="" class="tbbg2">APPLICANT NAME</th>
+                        <th st-sort="" class="tbbg2">PRODUCT TITLE</th>
+                        <th st-sort="" class="tbbg2"> ONLINE NUMBER</th>
+                        <th st-sort="" class="tbbg2"> REGISTRATION NUMBER</th>
+                        <th st-sort="" class="tbbg2">REGISTRATION DATE</th>
+
+
+
+
+
+
+                        <th class="tbbg2">UPDATE</th>
+
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr ng-repeat="row in displayedCollection2">
+
+
+
+
+                        <td>{{row.applicant_name}}</td>
+                        <td>{{row.product_title}}</td>
+                        <td>{{row.oai_no}}</td>
+                        <td>{{row.reg_no}}</td>
+                        <td>{{row.reg_dt}}</td>
+
+
+
+
+
+
+                        <td align="center">
+
+                            <a ng-click="add4(row); $event.preventDefault(); $event.stopPropagation();" class="icon-bar" href="#"> <i class="fa fa-floppy-o"></i></a>
+                        </td>
+
+
+
+
+
+
+
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-center">
+                            <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="7"></div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <input id="xname" name="xname" type="hidden" runat="server" />
+            <input id="vamount" name="vamount" type="hidden" runat="server" />
+            <input id="vtranid" name="vtranid" type="hidden" runat="server" />
+
+    </form>
+</div>

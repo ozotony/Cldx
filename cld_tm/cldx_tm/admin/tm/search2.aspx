@@ -9,7 +9,9 @@
 
 <link rel="stylesheet" href="../../css/jquery.ui.all.css" />
 
- <script src="../../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+
+    <script src="../../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
 <script src="../../js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="../../ui/jquery.cookie.js"></script>

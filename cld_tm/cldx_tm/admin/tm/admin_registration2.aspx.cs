@@ -201,7 +201,11 @@ namespace cld.admin.tm
             this.edit_xemail.Text = ody.DecryptString(this.ad.xemail, file_len, file_string);
             this.edit_telephone1.Text = this.ad.xtelephone1;
             this.edit_telephone2.Text = this.ad.xtelephone2;
-            this.edit_xrole.SelectedIndex = Convert.ToInt16(this.ad.xroleID) - 1;
+            // this.edit_xrole.SelectedIndex = Convert.ToInt32(this.ad.xroleID) - 1;
+            this.edit_xrole.SelectedValue = this.ad.xroleID;
+
+
+
             this.edit_status.SelectedIndex = Convert.ToInt16(this.ad.xvisible);
             this.enable_EditTbl = "1";
         }

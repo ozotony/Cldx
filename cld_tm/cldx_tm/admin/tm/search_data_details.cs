@@ -50,6 +50,7 @@
         public zues.Adminz lt_x_admin_details = new zues.Adminz();
         public string pID;
         public string rbval_text = "Search Conducted";
+    
         public string search_doc_succ1 = "";
         public string search_doc_succ2 = "";
         public string search_doc_succ3 = "";

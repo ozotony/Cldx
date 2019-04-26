@@ -83,6 +83,14 @@
                 show_exam_docs = 1;
             }
 
+            else if (this.rbValid.SelectedValue == "Re-examine")
+            {
+                this.rbval_text = "Re-examine";
+                this.admin_status = "3";
+                Verify.Visible = true;
+                show_exam_docs = 1;
+            }
+
             if (base.Request.QueryString["cri"] != null)
             {
                 this.cri = base.Request.QueryString["cri"].ToString();
@@ -260,6 +268,14 @@
                 Verify.Visible = true;
                 show_exam_docs = 1;
             }
+
+            else if (this.rbValid.SelectedValue == "Re-examine")
+            {
+                this.rbval_text = "Re-examine";
+                this.admin_status = "3";
+                Verify.Visible = true;
+                show_exam_docs = 1;
+            }
         }
 
         protected void Verify_Click(object sender, EventArgs e)
@@ -304,11 +320,11 @@
                     {
                         if (this.cri == "n")
                         {
-                            base.Response.Redirect("./examiners.aspx?x=n");
+                            base.Response.Redirect("./Re_examiners.aspx?x=n");
                         }
                         else
                         {
-                            base.Response.Redirect("./examiners.aspx?x=r");
+                            base.Response.Redirect("./Re_examiners.aspx?x=r");
                         }
 
                     }              

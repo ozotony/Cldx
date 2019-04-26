@@ -88,6 +88,8 @@
                     <img alt="" src="../../../images/view.png" style="width: 100px; height: 100px" /></a>
                       <br /><%Response.Write("( "+lt_gs2+" )");%></td>
             <td style="width: 30%;" align="center">
+                <img alt="" src="../../../images/view.png" style="width: 100px; height: 100px" /></a>
+                      <br /><%Response.Write("( "+lt_mi_r+" )");%>
                </td>
         </tr>
         
@@ -97,7 +99,7 @@
             <td style="width: 30%;" align="center">
                   <a href="../AppealRejection3.aspx">TREATED  APPLICATIONS</a></td>
             <td style="width: 30%;" align="center">
-               <a href="./g_applications.aspx"></a></td>
+               <a href="../Re_examiners.aspx?x=r">RE-EXAMINE</a></td>
         </tr>
         
         <tr>

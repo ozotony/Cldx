@@ -21,6 +21,7 @@ namespace cld.admin.tm.Appeal_Rejection
         public Int64 lt_mi2 = 0;
         public Int64 lt_g = 0;
         public Int64 lt_gs2 = 0;
+        public Int64 lt_mi_r = 0;
 
         public zues z = new zues();
 
@@ -47,6 +48,7 @@ namespace cld.admin.tm.Appeal_Rejection
             lt_mi2 = this.z.getMarkInfoRSCnt10("1", "Recordal");
 
             lt_g = z.getGwalletRSCnt("1", "Fresh");
+            this.lt_mi_r = this.z.getMarkInfoRSCnt("3", "Re-examine");
         }
     }
 }

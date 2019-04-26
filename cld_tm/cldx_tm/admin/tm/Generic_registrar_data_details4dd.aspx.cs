@@ -283,8 +283,22 @@ namespace cld.admin.tm
 
                             xusr9 = "OLD APPLICANT NATIONALITY";
                             xusr10 = "NEW APPLICANT NATIONALITY";
+                            try { 
                             xusr11 = ret.getCountryName(xp[0].OldApplicantNationality);
-                            xusr12 = ret.getCountryName(xp[0].newApplicantNationality);
+                            }
+                            catch(Exception ee)
+                            {
+                                xusr11 = "";
+                            }
+                            try
+                            {
+                                xusr12 = ret.getCountryName(xp[0].newApplicantNationality);
+
+                            }
+                            catch(Exception ee)
+                            {
+                                xusr12 = "";
+                            }
 
                             xusr13 = "DATE OF ASSIGNMENT";
                             xusr14 = xp[0].assignment_date;

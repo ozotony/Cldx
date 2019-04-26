@@ -93,7 +93,7 @@
              </td>
           </tr>
           <tr>
-            <td  class="tbbg"> WELCOME TO THE EXAMINERS UNIT</td>
+            <td  class="tbbg"> WELCOME </td>
           </tr>
           <tr class="stripedout">
             <td align="center">

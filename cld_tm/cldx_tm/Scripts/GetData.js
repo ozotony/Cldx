@@ -2,11 +2,11 @@
 
 
 
-var serviceBaseIpo = 'http://88.150.164.30/EinaoTestEnvironment.IPO/';
+var serviceBaseIpo = 'http://ipo.cldng.com/';
 
 //var serviceBaseCld = 'http://localhost:49703/'
 
-var serviceBaseCld = 'http://45.40.139.163/EinaoTestEnvironment.CLD/'
+var serviceBaseCld = 'http://tm.cldng.com/'
 
 app.controller('myController', ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
 
@@ -105,6 +105,17 @@ app.controller('myController2', ['$scope', '$http', '$rootScope', function ($sco
             if (item.description == "Re-conduct search") {
                 User_Status.online_id = item.id;
                 User_Status.Status = "Re-conduct search"
+                User_Status.userid = kkk;
+                User_Status.xcomment = kkk2;
+                event2s.push(User_Status)
+                vcount = vcount + 1;
+                //alert(item.oai_no)
+            }
+
+
+            if (item.description == "Re-examine") {
+                User_Status.online_id = item.id;
+                User_Status.Status = "Re-examine"
                 User_Status.userid = kkk;
                 User_Status.xcomment = kkk2;
                 event2s.push(User_Status)

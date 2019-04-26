@@ -63,9 +63,7 @@
             <td style="width: 30%;" align="center">
                 &nbsp;</td>
             <td style="width: 30%;" align="center">
-                <a href="../Re_examiners.aspx?x=r"> 
-                    <img alt="" src="../../../images/view.png" style="width: 100px; height: 100px" /></a>
-                    <br /><%Response.Write("( "+lt_mi_r+" )");%>
+              
                     </td>
         </tr>
         
@@ -74,7 +72,7 @@
                 <a href="../examiners.aspx?x=n">FRESH APPLICATIONS</a></td>
             <td style="width: 30%;" align="center"></td>
             <td style="width: 30%;" align="center">
-                <a href="../Re_examiners.aspx?x=r">RE-EXAMINE</a></td>
+                </td>
         </tr>
         
         <tr>

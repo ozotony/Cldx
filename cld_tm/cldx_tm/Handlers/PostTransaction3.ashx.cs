@@ -52,7 +52,17 @@ namespace cld.Handlers
 
                 }
 
-               
+                if (dd[i].Status == "Re-examine")
+                {
+                    //bb.g_pwalletStatus2(dd[i].online_id, "11", "Accepted");
+                    //bb.update_RecordalStatus3(dd[i].Recordid, "11", "Accepted");
+                    // bb.g_pwalletStatus2(dd[i].online_id, "22", "Re-conduct search 1");
+                    z.a_mul_tm_office(dd[i].online_id, "3", "Re-examine", dd[i].xcomment, "", "", "", dd[i].userid);
+
+
+                }
+
+
                 //  String ds2 = dd[i].online_id;
             }
 

@@ -6,7 +6,7 @@ var serviceBaseCld = 'http://tm.cldng.com/'
 
 //var serviceBaseCld = 'http://localhost:49703/'
 
-var serviceBasePay = "http://88.150.164.30/Payx/";
+var serviceBasePay = "http://payx.com.ng/";
 
 //var serviceBaseCld = 'http://localhost:49703/';
 app.filter('offset', function () {
@@ -24,11 +24,11 @@ app.controller('myController', ['$scope', '$http', '$rootScope', function ($scop
     $scope.currentPage = 0;
     $scope.items = [];
     $scope.isDisabled = false;
-   // var url3 = 'http://88.150.164.30/EinaoTestEnvironment.IPO/Handlers/GetRegistration2.ashx';
+   
 
     var url3 = serviceBase + 'Handlers/GetRegistration2.ashx';
 
-    // var url3 = ' http://localhost:21936/home/GetAgent';
+    
 
     $scope.search = function () {
         //  alert(user.DateOfBrith)
@@ -40,7 +40,7 @@ app.controller('myController', ['$scope', '$http', '$rootScope', function ($scop
 
         $.ajax({
             type: "POST",
-          //  url: 'http://payx.com.ng/Handler/GetTransaction2.ashx',
+         
 
             url: serviceBaseCld +'Handlers/GetApplicant.ashx',
             data: formData,
@@ -383,7 +383,7 @@ app.controller('myController2', ['$scope', '$http', '$rootScope', function ($sco
     }
     $http({
         method: 'GET',
-      //  url: 'http://localhost:49703//Handlers/GetData.ashx'
+     
         url: serviceBaseCld + 'Handlers/GetData.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -420,7 +420,7 @@ app.controller('myController3', ['$scope', '$http', '$rootScope', function ($sco
 
     $http({
         method: 'GET',
-         // url: 'http://localhost:49703/Handlers/GetData2.ashx'
+         
         url: serviceBaseCld +  'Handlers/GetData2.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -455,7 +455,7 @@ app.controller('myController4', ['$scope', '$http', '$rootScope', function ($sco
 
     $http({
         method: 'GET',
-        // url: 'http://localhost:49703/Handlers/GetData3.ashx'
+      
         url: serviceBaseCld +  'Handlers/GetData4.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -541,7 +541,7 @@ app.controller('myController5', ['$scope', '$http', '$rootScope', function ($sco
     }
     $http({
         method: 'GET',
-        // url: 'http://88.150.164.30/CLD/Handlers/GetData.ashx'
+       
         url: serviceBaseCld + 'Handlers/GetData5.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -804,19 +804,15 @@ function (isConfirm) {
 
     });
 
-    //$scope.news = [
-    //{ "firstName": "AGENT John Just uploaded data click to view ","link":"http://www.cnn.com"},
-    //{ "firstName": "AGENT Anna JUST uploaded data click to view ", "link": "http://www.cnn.com" },
-    //{ "firstName": "AGENT Peter JUST uploaded data click to view ", "link": "http://www.cnn.com" }
-    //]
+    
     $scope.add3 = function (dd) {
 
         if (dd.RECORDAL_TYPE == "Change_Name") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
            serviceBaseCld +   "admin/tm/Change_ApplicantName3.aspx?transID=" + dd.RecordalID + "&&vtranid=" + dd.oai_no,
-             // "http://localhost:49703/admin/tm/Change_ApplicantName3.aspx?transID=" + dd.RecordalID + "&&vtranid=" + dd.oai_no,
+            
              '_blank' // <- This is what makes it open in a new window.
            );
         }
@@ -826,7 +822,7 @@ function (isConfirm) {
     }
     $scope.scrollTo = function (id) {
         if (id.RECORDAL_TYPE == "Change_Address") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
             window.open(
                         serviceBaseCld +  "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
                          '_blank' // <- This is what makes it open in a new window.
@@ -834,7 +830,7 @@ function (isConfirm) {
         }
 
         if (id.RECORDAL_TYPE == "Change_Name") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -843,7 +839,7 @@ function (isConfirm) {
         }
 
         if (id.RECORDAL_TYPE == "registered_user") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld + "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -853,7 +849,7 @@ function (isConfirm) {
 
         if (id.RECORDAL_TYPE == "Change_Rectification") {
 
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
              '_blank' // <- This is what makes it open in a new window.
@@ -863,7 +859,7 @@ function (isConfirm) {
 
         if (id.RECORDAL_TYPE == "Change_Assignment") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4d.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -874,7 +870,7 @@ function (isConfirm) {
 
         if (id.RECORDAL_TYPE == "Change_Assignment2") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4d.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
            serviceBaseCld +   "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -885,8 +881,7 @@ function (isConfirm) {
 
         if (id.RECORDAL_TYPE == "Change_Renewal") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
-
+            
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
              '_blank' // <- This is what makes it open in a new window.
@@ -896,7 +891,7 @@ function (isConfirm) {
 
         if (id.RECORDAL_TYPE == "Change_Agent") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld + "admin/tm/Generic_registrar_data_details6bb.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -913,7 +908,7 @@ function (isConfirm) {
    
     $http({
         method: 'GET',
-        // url: 'http://localhost:49703//Handlers/GetData6.ashx'
+       
         url: serviceBaseCld + 'Handlers/GetData6.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -976,7 +971,7 @@ app.controller('myController7', ['$scope', '$http', '$rootScope', function ($sco
 
     $scope.scrollTo = function (id) {
         if (id.RECORDAL_TYPE == "Change_Address") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+           
             window.open(
                        serviceBaseCld +   "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
                          '_blank' // <- This is what makes it open in a new window.
@@ -984,7 +979,7 @@ app.controller('myController7', ['$scope', '$http', '$rootScope', function ($sco
         }
 
         if (id.RECORDAL_TYPE == "Change_Name") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -994,7 +989,7 @@ app.controller('myController7', ['$scope', '$http', '$rootScope', function ($sco
 
 
         if (id.RECORDAL_TYPE == "registered_user") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+           
 
             window.open(
             serviceBaseCld + "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1004,7 +999,7 @@ app.controller('myController7', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Rectification") {
 
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
              '_blank' // <- This is what makes it open in a new window.
@@ -1014,7 +1009,7 @@ app.controller('myController7', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Assignment") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4d.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1025,7 +1020,7 @@ app.controller('myController7', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Assignment2") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4d.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1036,7 +1031,7 @@ app.controller('myController7', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Renewal") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1046,7 +1041,7 @@ app.controller('myController7', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Agent") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld + "admin/tm/Generic_registrar_data_details6bb.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1062,7 +1057,7 @@ app.controller('myController7', ['$scope', '$http', '$rootScope', function ($sco
 
     $http({
         method: 'GET',
-        // url: 'http://88.150.164.30/CLD/Handlers/GetData.ashx'
+       
         url: serviceBaseCld + 'Handlers/GetData7.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -1086,7 +1081,7 @@ app.controller('myController8', ['$scope', '$http', '$rootScope', function ($sco
 
     $scope.scrollTo = function (id) {
         if (id.RECORDAL_TYPE == "Change_Address") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
             window.open(
                         serviceBaseCld +  "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
                          '_blank' // <- This is what makes it open in a new window.
@@ -1094,7 +1089,7 @@ app.controller('myController8', ['$scope', '$http', '$rootScope', function ($sco
         }
 
         if (id.RECORDAL_TYPE == "Change_Name") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1105,7 +1100,7 @@ app.controller('myController8', ['$scope', '$http', '$rootScope', function ($sco
 
 
         if (id.RECORDAL_TYPE == "registered_user") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld + "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1114,7 +1109,7 @@ app.controller('myController8', ['$scope', '$http', '$rootScope', function ($sco
         }
         if (id.RECORDAL_TYPE == "Change_Rectification") {
 
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
              '_blank' // <- This is what makes it open in a new window.
@@ -1124,7 +1119,7 @@ app.controller('myController8', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Assignment") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4d.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
            serviceBaseCld +   "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1135,7 +1130,7 @@ app.controller('myController8', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Assignment2") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4d.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
            serviceBaseCld +   "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1146,7 +1141,7 @@ app.controller('myController8', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Renewal") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1156,7 +1151,7 @@ app.controller('myController8', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Agent") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld + "admin/tm/Generic_registrar_data_details6bb.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1172,7 +1167,7 @@ app.controller('myController8', ['$scope', '$http', '$rootScope', function ($sco
 
     $http({
         method: 'GET',
-        // url: 'http://88.150.164.30/CLD/Handlers/GetData.ashx'
+       
         url: serviceBaseCld +  'Handlers/GetData8.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -1201,7 +1196,7 @@ app.controller('myController9', ['$scope', '$http', '$rootScope', function ($sco
 
     $scope.scrollTo = function (id) {
         if (id.RECORDAL_TYPE == "Change_Address") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+
             window.open(
                         serviceBaseCld +  "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
                          '_blank' // <- This is what makes it open in a new window.
@@ -1209,7 +1204,7 @@ app.controller('myController9', ['$scope', '$http', '$rootScope', function ($sco
         }
 
         if (id.RECORDAL_TYPE == "Change_Name") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+           
 
             window.open(
            serviceBaseCld +   "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1219,7 +1214,7 @@ app.controller('myController9', ['$scope', '$http', '$rootScope', function ($sco
 
 
         if (id.RECORDAL_TYPE == "registered_user") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld + "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1230,7 +1225,7 @@ app.controller('myController9', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Rectification") {
 
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
             window.open(
            serviceBaseCld +   "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
              '_blank' // <- This is what makes it open in a new window.
@@ -1240,7 +1235,7 @@ app.controller('myController9', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Assignment") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4d.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
            serviceBaseCld +   "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1251,7 +1246,7 @@ app.controller('myController9', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Assignment2") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4d.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
            serviceBaseCld +   "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1262,7 +1257,7 @@ app.controller('myController9', ['$scope', '$http', '$rootScope', function ($sco
 
         if (id.RECORDAL_TYPE == "Change_Renewal") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1278,7 +1273,7 @@ app.controller('myController9', ['$scope', '$http', '$rootScope', function ($sco
 
     $http({
         method: 'GET',
-        // url: 'http://88.150.164.30/CLD/Handlers/GetData.ashx'
+
         url: serviceBaseCld +  'Handlers/GetData9.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -1338,22 +1333,22 @@ app.controller('myController10', ['$scope', '$http', '$rootScope', function ($sc
     $scope.add3 = function (dd) {
 
         if (dd.RECORDAL_TYPE == "Change_Name") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+           
 
             window.open(
             serviceBaseCld +  "admin/tm/Change_ApplicantName3.aspx?transID=" + dd.RecordalID + "&&vtranid=" + dd.oai_no,
-             // "http://localhost:49703/admin/tm/Change_ApplicantName3.aspx?transID=" + dd.RecordalID + "&&vtranid=" + dd.oai_no,
+             
              '_blank' // <- This is what makes it open in a new window.
            );
         }
 
 
         if (dd.RECORDAL_TYPE == "Change_Address") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+           
 
             window.open(
             serviceBaseCld +  "admin/tm/Change_ApplicantAddress2.aspx?transID=" + dd.RecordalID + "&&vtranid=" + dd.oai_no,
-             // "http://localhost:49703/admin/tm/Change_ApplicantName3.aspx?transID=" + dd.RecordalID + "&&vtranid=" + dd.oai_no,
+           
              '_blank' // <- This is what makes it open in a new window.
            );
         }
@@ -1363,7 +1358,7 @@ app.controller('myController10', ['$scope', '$http', '$rootScope', function ($sc
 
     $scope.scrollTo = function (id) {
         if (id.RECORDAL_TYPE == "Change_Address") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
             window.open(
                        serviceBaseCld +   "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
                          '_blank' // <- This is what makes it open in a new window.
@@ -1371,7 +1366,7 @@ app.controller('myController10', ['$scope', '$http', '$rootScope', function ($sc
         }
 
         if (id.RECORDAL_TYPE == "Change_Name") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
            serviceBaseCld +   "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1381,7 +1376,7 @@ app.controller('myController10', ['$scope', '$http', '$rootScope', function ($sc
 
 
         if (id.RECORDAL_TYPE == "registered_user") {
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+           
 
             window.open(
             serviceBaseCld + "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1390,7 +1385,7 @@ app.controller('myController10', ['$scope', '$http', '$rootScope', function ($sc
         }
         if (id.RECORDAL_TYPE == "Change_Rectification") {
 
-            //  window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4c.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
             window.open(
             serviceBaseCld + "admin/tm/Generic_registrar_data_details4cc.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
              '_blank' // <- This is what makes it open in a new window.
@@ -1400,7 +1395,7 @@ app.controller('myController10', ['$scope', '$http', '$rootScope', function ($sc
 
         if (id.RECORDAL_TYPE == "Change_Assignment") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4d.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1411,7 +1406,7 @@ app.controller('myController10', ['$scope', '$http', '$rootScope', function ($sc
 
         if (id.RECORDAL_TYPE == "Change_Assignment2") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4d.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1422,7 +1417,7 @@ app.controller('myController10', ['$scope', '$http', '$rootScope', function ($sc
 
         if (id.RECORDAL_TYPE == "Change_Renewal") {
 
-            //    window.location.href = "http://88.150.164.30/EinaoTestEnvironment.CLD/admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no
+            
 
             window.open(
             serviceBaseCld +  "admin/tm/Generic_registrar_data_details4ee.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
@@ -1529,7 +1524,7 @@ function (isConfirm) {
 
     $http({
         method: 'GET',
-        //  url: 'http://localhost:49703//Handlers/GetData.ashx'
+        
         url: serviceBaseCld + 'Handlers/GetData20.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -1581,7 +1576,7 @@ app.controller('myController12', ['$scope', '$http', '$rootScope','$interval', f
 
     $http({
         method: 'GET',
-        //  url: 'http://localhost:49703//Handlers/GetData.ashx'
+
         url: serviceBaseCld + 'Handlers/GetData20b.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -1753,7 +1748,7 @@ app.controller('myController33', ['$scope', '$http', '$rootScope', function ($sc
 
     $http({
         method: 'GET',
-        // url: 'http://localhost:49703/Handlers/GetData2.ashx'
+        
         url: serviceBaseCld + 'Handlers/GetData33.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -1811,7 +1806,7 @@ app.controller('myController34', ['$scope', '$http', '$rootScope', '$interval', 
 
     $http({
         method: 'GET',
-        //  url: 'http://localhost:49703//Handlers/GetData.ashx'
+       
         url: serviceBaseCld + 'Handlers/AppealRejection2.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;
@@ -1829,8 +1824,8 @@ app.controller('myController34', ['$scope', '$http', '$rootScope', '$interval', 
     $scope.add22 = function (dd) {
 
         //  alert(dd.xid)
-        OpenWindowWithPost2("http://45.40.139.163/EinaoTestEnvironment.CLD/admin/tm/rejection_slip_details.aspx?x=" + dd.xid, "width=1000, height=600, left=100, top=100, resizable=yes, scrollbars=yes", "NewFile");
-        //  $scope.detailFrame = "http://45.40.139.163/EinaoTestEnvironment.CLD/admin/tm/rejection_slip_details.aspx?x=" + dd.xid;
+        OpenWindowWithPost2(serviceBaseCld +"admin/tm/rejection_slip_details.aspx?x=" + dd.xid, "width=1000, height=600, left=100, top=100, resizable=yes, scrollbars=yes", "NewFile");
+       
 
     }
 
@@ -1875,7 +1870,7 @@ app.controller('myController35', ['$scope', '$http', '$rootScope', '$interval', 
 
     $http({
         method: 'GET',
-        //  url: 'http://localhost:49703//Handlers/GetData.ashx'
+       
         url: serviceBaseCld + 'Handlers/AppealRejection3.ashx'
     }).success(function (data, status, headers, config) {
         var dd = data;

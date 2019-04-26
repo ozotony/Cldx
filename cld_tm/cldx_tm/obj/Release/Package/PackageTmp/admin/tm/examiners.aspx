@@ -152,7 +152,7 @@
        
          <tr >
             <td align="center" style="color:#ff0000; font-size: 14px; font-weight: bolder; ">         
-                CODE NOTICE: <strong>Reg</strong>="Registrable"; <strong>N-Reg</strong>="Non-registrable"; <strong>RCS</strong>="Re-conduct search"; <strong>CLS</strong>="Class";  </td>
+                CODE NOTICE: <strong>Reg</strong>="Registrable"; <strong>N-Reg</strong>="Non-registrable"; <strong>RCS</strong>="Re-conduct search"; <strong>CLS</strong>="Class";<strong>Re-ex</strong>="Re-examine";  </td>
             </tr>         
          
         <tr> 
@@ -229,6 +229,7 @@
                     <asp:ListItem Value="Registrable">Reg </asp:ListItem>
                     <asp:ListItem Value="Non-registrable">N-Reg</asp:ListItem>
                     <asp:ListItem Value="Re-conduct search 1">RCS</asp:ListItem>
+
                     </asp:RadioButtonList>
                             </ItemTemplate>
                             <HeaderStyle HorizontalAlign="Left" Width="100px" />
@@ -329,6 +330,10 @@
                       <label>
                                 <input type="radio" ng-model="row.description"  value="Re-conduct search">
                               RCS
+                            </label>
+                         <label>
+                                <input type="radio" ng-model="row.description"  value="Re-examine">
+                              Re-ex
                             </label>
             </td>
                 

@@ -1,7 +1,7 @@
 ﻿var app = angular.module("myModule", [ "angular-loading-bar"]);
-var serviceBaseIpo = 'http://88.150.164.30/EinaoTestEnvironment.IPO/';
+var serviceBaseIpo = 'http://ipo.cldng.com/';
 
-var serviceBaseCld = 'http://88.150.164.30/EinaoTestEnvironment.CLD/'
+var serviceBaseCld = 'http://5.77.54.44:8081/'
 
 
 app.controller('myController', ['$scope', '$http', '$rootScope', '$filter', function ($scope, $http, $rootScope, $filter) {

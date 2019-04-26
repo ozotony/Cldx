@@ -291,7 +291,7 @@
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="dsRole2" runat="server" 
                     ConnectionString="<%$ ConnectionStrings:cldConnectionString %>" 
-                    SelectCommand="SELECT * FROM [roles] where priv  not in (1,14)  "></asp:SqlDataSource>
+                    SelectCommand="SELECT * FROM [roles] where priv  not in (1,14)   "></asp:SqlDataSource>
             </td>
         </tr>
         <tr>

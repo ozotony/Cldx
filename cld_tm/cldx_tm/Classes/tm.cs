@@ -1680,9 +1680,20 @@
                     using (command = connection.CreateCommand())
                     {
                         // command.CommandTimeout = 300;
-                        command.CommandText = "UPDATE address SET countryID= '" + c_app_addy.countryID + "',stateID='" + c_app_addy.stateID + "',street='" + c_app_addy.street + "',zip='',telephone1='" + c_app_addy.telephone1 + "', ";
+                        command.CommandText = "UPDATE address SET countryID= '" + c_app_addy.countryID + "',stateID='" + c_app_addy.stateID + "',street=@street,zip='',telephone1='" + c_app_addy.telephone1 + "', ";
                         command.CommandText += " email1='" + c_app_addy.email1 + "',reg_date='" + c_app_addy.reg_date + "' WHERE ID='" + c_app_addy.ID + "'  ";
+                        command.Parameters.Add("@street", SqlDbType.NChar, 400);
+
+                        command.Parameters["@street"].Value = c_app_addy.street;
+
                         command.Connection.Open();
+                        foreach (SqlParameter Parameter in command.Parameters)
+                        {
+                            if (Parameter.Value == null)
+                            {
+                                Parameter.Value = DBNull.Value;
+                            }
+                        }
                         num += command.ExecuteNonQuery();
                         command.Connection.Close();
                     }

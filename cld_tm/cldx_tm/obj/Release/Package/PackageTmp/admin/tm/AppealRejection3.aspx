@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="myModule">
 <head runat="server">
-    <title>VERIFICATION DATA</title>
+    <title>APPEAL REJECTION</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
 
 <link rel="stylesheet" href="../../css/jquery.ui.all.css" />

@@ -364,19 +364,26 @@ namespace cld.Classes
         public string getCountryName(string ID)
         {
             string str = "";
-            SqlConnection connection = new SqlConnection(this.Connect());
-            SqlCommand command = new SqlCommand("SELECT name FROM country WHERE ID='" + ID + "' ", connection);
-            connection.Open();
-            SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
-            while (reader.Read())
+            try
             {
-                str = reader["name"].ToString();
+                SqlConnection connection = new SqlConnection(this.Connect());
+                SqlCommand command = new SqlCommand("SELECT name FROM country WHERE ID='" + ID + "' ", connection);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+                while (reader.Read())
+                {
+                    str = reader["name"].ToString();
+                }
+                reader.Close();
+                connection.Close();
+                string str2 = str.Substring(0, 1).ToUpper();
+                string str3 = str.Substring(1, str.Length - 1).ToLower();
+                return (str2 + str3);
             }
-            reader.Close();
-            connection.Close();
-            string str2 = str.Substring(0, 1).ToUpper();
-            string str3 = str.Substring(1, str.Length - 1).ToLower();
-            return (str2 + str3);
+            catch(Exception ee)
+            {
+                return "";
+            }
         }
 
 

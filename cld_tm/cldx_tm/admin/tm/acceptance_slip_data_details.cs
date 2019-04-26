@@ -135,7 +135,14 @@
                     this.c_rep_addy = this.t.getAddressClassByID(this.c_rep.addressID);
                 }
                 this.lt_tm_office = this.z.getTmOfficeDetailsByID(this.c_p.ID);
-                this.lt_tm_admin_details = this.z.getTmAdminDetailsByID(this.lt_tm_office[0].xofficer);
+                try
+                {
+                    this.lt_tm_admin_details = this.z.getTmAdminDetailsByID(this.lt_tm_office[0].xofficer);
+                }
+                catch(Exception ee)
+                {
+                    this.lt_tm_admin_details = null;
+                }
                 if (c_mark.logo_pic != "")
                 {
                     tm_img.ImageUrl = "./" + c_mark.logo_pic;

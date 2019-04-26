@@ -11694,30 +11694,39 @@ namespace cld.Classes
                 xreg_date = "",
                 xvisible = ""
             };
-            SqlConnection connection = new SqlConnection(this.Connect());
-            SqlCommand command = new SqlCommand("SELECT * FROM xadminz_tm WHERE xID='" + ID + "' ", connection)
+            try
             {
-               CommandTimeout = 0
-            };
-            connection.Open();
-            SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
-            while (reader.Read())
-            {
-                adminz.xID = reader["xID"].ToString();
-                adminz.xroleID = reader["xroleID"].ToString();
-                adminz.xname = reader["xname"].ToString();
-                adminz.xemail = reader["xemail"].ToString();
-                adminz.xpass = reader["xpass"].ToString();
-                adminz.xtelephone1 = reader["xtelephone1"].ToString();
-                adminz.xtelephone2 = reader["xtelephone2"].ToString();
-                adminz.xsection = reader["xsection"].ToString();
-                adminz.xlog_officer = reader["xlog_officer"].ToString();
-                adminz.xreg_date = reader["xreg_date"].ToString();
-                adminz.xvisible = reader["xvisible"].ToString();
+                SqlConnection connection = new SqlConnection(this.Connect());
+                SqlCommand command = new SqlCommand("SELECT * FROM xadminz_tm WHERE xID='" + ID + "' ", connection)
+                {
+                    CommandTimeout = 0
+                };
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+                while (reader.Read())
+                {
+                    adminz.xID = reader["xID"].ToString();
+                    adminz.xroleID = reader["xroleID"].ToString();
+                    adminz.xname = reader["xname"].ToString();
+                    adminz.xemail = reader["xemail"].ToString();
+                    adminz.xpass = reader["xpass"].ToString();
+                    adminz.xtelephone1 = reader["xtelephone1"].ToString();
+                    adminz.xtelephone2 = reader["xtelephone2"].ToString();
+                    adminz.xsection = reader["xsection"].ToString();
+                    adminz.xlog_officer = reader["xlog_officer"].ToString();
+                    adminz.xreg_date = reader["xreg_date"].ToString();
+                    adminz.xvisible = reader["xvisible"].ToString();
+                }
+                reader.Close();
+                connection.Close();
+                return adminz;
+
             }
-            reader.Close();
-            connection.Close();
-            return adminz;
+
+            catch(Exception ee)
+            {
+                return null;
+            }
         }
 
         public TmOffice getTmOfficeByID(string ID)

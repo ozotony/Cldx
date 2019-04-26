@@ -374,6 +374,7 @@
                     <asp:ListItem Value="Registrable" >Registrable </asp:ListItem>
                     <asp:ListItem Value="Non-registrable">Non-registrable</asp:ListItem>
                      <asp:ListItem Value="Re-conduct search">Re-conduct search</asp:ListItem>
+                 <asp:ListItem Value="Re-examine">Re-examine</asp:ListItem>
                 </asp:RadioButtonList>
             </td>
         </tr>

@@ -1,0 +1,135 @@
+﻿
+
+namespace cld.admin.tm
+{
+    using admin;
+    using Classes;
+    using System;
+    using System.Collections.Generic;
+    using System.Web.UI;
+    using System.Web.UI.WebControls;
+    using System.IO;
+    public partial class s_data_details_report2 : System.Web.UI.Page
+    {
+        public string admin = "";
+        public string admin_status = "33";
+        public tm.AddressService c_aos = new tm.AddressService();
+        public XObjs.G_Applicant_info c_app = new XObjs.G_Applicant_info();
+        public tm.Address c_app_addy = new tm.Address();
+        public XObjs.G_Tm_info c_mark = new XObjs.G_Tm_info();
+        public XObjs.G_Pwallet c_p = new XObjs.G_Pwallet();
+        public tm.Representative c_rep = new tm.Representative();
+        public tm.Address c_rep_addy = new tm.Address();
+        public string cri = "";
+        public List<zues.TmOffice> lt_tm_office = new List<zues.TmOffice>();
+        public zues.Adminz lt_x_admin_details = new zues.Adminz();
+        public string pID;
+        public string rbval_text = "Search 2 Conducted";
+        public string search_doc_succ1 = "";
+        public string search_doc_succ2 = "";
+        public string search_doc_succ3 = "";
+        public string succ = "";
+        public tm.SWallet swallet = new tm.SWallet();
+        public tm t = new tm();
+        public Retriever r = new Retriever();
+        public string xcomments = "";
+        public string xofficer;
+        public string serverpath;
+        public zues z = new zues();
+
+
+        protected void btnViewSearchReport_Click(object sender, EventArgs e)
+        {
+            base.Response.Redirect("./view_searcho2.aspx?x=" + this.pID, false);
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            this.serverpath = base.Server.MapPath("~/");
+            if (base.Request.QueryString["cri"] != null)
+            {
+                this.cri = base.Request.QueryString["cri"].ToString();
+            }
+            if (base.Request.QueryString["x"] != null)
+            {
+                if (Session["pwalletID"] != null)
+                {
+                    if (Session["pwalletID"].ToString() != "")
+                    {
+                        this.admin = Session["pwalletID"].ToString();
+                    }
+                    else
+                    {
+                        base.Response.Redirect("./xcontrol.aspx");
+                    }
+                }
+                else
+                {
+                    base.Response.Redirect("./xcontrol.aspx");
+                }
+                this.pID = base.Request.QueryString["x"].ToString();
+                this.c_mark = this.z.getG_Tm_infoByLogStaff(this.pID)[0];
+              
+
+
+                this.c_p = this.r.getG_PwalletByID(this.c_mark.log_staff);
+               
+                this.c_app = this.z.getG_ApplicantByLogstaff(this.pID)[0];
+               
+               // this.c_app_addy = this.t.getAddressClassByID(this.c_app.addressID);
+
+                if (c_mark.logo_pic != "")
+                {
+                    tm_img.ImageUrl = "./" + c_mark.logo_pic;
+
+                    if (File.Exists(serverpath + "\\admin\\tm\\" + c_mark.logo_pic))
+                    {
+                        tm_img.Height = new Unit(120, UnitType.Pixel);
+                        tm_img.Width = new Unit(120, UnitType.Pixel);
+                        try
+                        {
+                            FileStream st = new FileStream(serverpath + "\\admin\\tm\\" + c_mark.logo_pic, FileMode.Open, FileAccess.Read);
+                            System.Drawing.Image new_img = System.Drawing.Image.FromStream(st);
+                            string ht = new_img.Height.ToString();
+                            string wt = new_img.Width.ToString();
+                            if ((ht != "") && (wt != "") && (ht != null) && (wt != null))
+                            {
+
+                                if (Convert.ToInt32(ht) > Convert.ToInt32(wt))
+                                {
+                                    tm_img.Height = new Unit(320, UnitType.Pixel);
+                                    tm_img.Width = new Unit(240, UnitType.Pixel);
+                                }
+                                else
+                                {
+                                    tm_img.Height = new Unit(240, UnitType.Pixel);
+                                    tm_img.Width = new Unit(320, UnitType.Pixel);
+                                }
+                            }
+                            else
+                            {
+                                tm_img.Visible = false;
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            tm_img.Visible = false;
+                        }
+                    }
+                    else
+                    {
+                        tm_img.Visible = false;
+                    }
+
+                }
+
+              //  xcomments = this.z.getTmAdminDetailsByID(admin).xname;
+            }
+            else
+            {
+                base.Response.Redirect("./search_unit2/searchprofile.aspx");
+            }
+        }
+
+    }
+}

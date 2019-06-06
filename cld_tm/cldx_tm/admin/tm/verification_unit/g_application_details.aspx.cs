@@ -128,6 +128,7 @@ namespace cld.admin.tm.verification_unit
                         this.Session["g_app_info"] = this.g_app_info;
                     }
                     this.g_applicant_info = this.ret.getG_Applicant_infoByPwalletID(this.g_pwallet.xid);
+                    xname5.Value = this.g_applicant_info.xemail;
                     if ((this.g_applicant_info.id != null) && (this.g_applicant_info.id != ""))
                     {
                         this.Session["g_applicant_info"] = this.g_applicant_info;

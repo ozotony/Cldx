@@ -10,6 +10,7 @@
         protected HtmlForm form1;
         public Int64 lt_mi_t = 0;
         public Int64 lt_mi_g = 0;
+        public Int64 lt_g = 0;
         public zues z = new zues();
 
         protected void Page_Load(object sender, EventArgs e)
@@ -40,6 +41,7 @@
 
  lt_mi_t =Convert.ToInt32( this.z.getMarkInfoRSCnt("2", "Valid") ) + Convert.ToInt32( this.z.getMarkInfoRSCnt("2", "Re-conduct search"));
             lt_mi_g = z.getGwalletRSCnt("2", "");
+            lt_g = z.getGwalletRSCnt("1", "Fresh");
         }
     }
 }

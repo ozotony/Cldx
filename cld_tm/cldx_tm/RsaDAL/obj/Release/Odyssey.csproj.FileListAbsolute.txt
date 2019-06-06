@@ -93,7 +93,7 @@ C:\Einao\VS Source\Projects\cldx_Backup2\cld_tm\cldx_tm\RsaDAL\obj\Release\Odyss
 C:\Einao\VS Source\Projects\cldx_Backup2\cld_tm\cldx_tm\RsaDAL\obj\Release\Odyssey.pdb
 C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\RsaDAL\bin\Release\Odyssey.dll
 C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\RsaDAL\bin\Release\Odyssey.pdb
-C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\RsaDAL\obj\Release\Odyssey.dll
-C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\RsaDAL\obj\Release\Odyssey.pdb
 C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\RsaDAL\obj\Release\Odyssey.csprojAssemblyReference.cache
 C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\RsaDAL\obj\Release\Odyssey.csproj.CoreCompileInputs.cache
+C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\RsaDAL\obj\Release\Odyssey.dll
+C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\RsaDAL\obj\Release\Odyssey.pdb

@@ -18,7 +18,7 @@ namespace cld.Handlers
             JavaScriptSerializer ser = new JavaScriptSerializer();
             var pp = context.Request["vv"];
             List<XObjs.Office_view> lt_m = new List<XObjs.Office_view>();
-            SearchDb dd = ser.Deserialize<SearchDb>(pp);
+          //  SearchDb dd = ser.Deserialize<SearchDb>(pp);
 
             zues z = new zues();
 
@@ -26,7 +26,8 @@ namespace cld.Handlers
           //  var pp2 = context.Request["vv2"];
 
             List<string> fulltext = new List<string>();
-            string str = dd.Productitle.Replace("'", "");
+          //  string str = dd.Productitle.Replace("'", "");
+            string str = pp.Replace("'", "");
             foreach (string str2 in str.Split(new char[] { ' ' }))
             {
                 if (str2 != "")
@@ -36,7 +37,7 @@ namespace cld.Handlers
             }
 
           lt_m = z.getNewAdminSearchMarkInfoRS222("2", "Valid", "product_title", fulltext, "", "");
-
+            ser.MaxJsonLength = Int32.MaxValue;
             context.Response.ContentType = "application/json";
             context.Response.Write(ser.Serialize(lt_m));
         }

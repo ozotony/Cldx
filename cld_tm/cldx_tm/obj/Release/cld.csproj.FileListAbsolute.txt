@@ -200,9 +200,9 @@ C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\bin\Odyssey.dll
 C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\bin\Odyssey.pdb
 C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\bin\EntityFramework.xml
 C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\bin\EntityFramework.SqlServer.xml
-C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\obj\Release\cld.dll
-C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\obj\Release\cld.pdb
-C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\obj\Release\cld.XmlSerializers.dll
 C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\obj\Release\cld.csprojAssemblyReference.cache
 C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\obj\Release\cld.csproj.CoreCompileInputs.cache
 C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\obj\Release\cld.csproj.CopyComplete
+C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\obj\Release\cld.dll
+C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\obj\Release\cld.pdb
+C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\obj\Release\cld.XmlSerializers.dll

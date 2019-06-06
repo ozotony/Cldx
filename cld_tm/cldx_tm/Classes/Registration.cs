@@ -118,9 +118,13 @@ namespace cld.Classes
                 string doc_path = "";
                 string connectionString = Connect();
                 c_pwall.reg_date = DateTime.Today.Date.ToString("yyyy-MM-dd"); //c_pwall.xtime = c_pwall.log_officer + ": " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss tt");
-                c_pwall.visible = "1"; c_pwall.status = "1"; c_pwall.stage = "5"; c_pwall.data_status = "Fresh";
+                c_pwall.visible = "1";  c_pwall.stage = "5";
+         //   c_pwall.status = "1";
+            c_pwall.status = "2";
+           // c_pwall.data_status = "Fresh";
+            c_pwall.data_status = "New";
 
-                if ((c_pwall.validationID != null) && (c_pwall.validationID != ""))
+            if ((c_pwall.validationID != null) && (c_pwall.validationID != ""))
                 {
                     using (connection = new SqlConnection(connectionString))
                     {

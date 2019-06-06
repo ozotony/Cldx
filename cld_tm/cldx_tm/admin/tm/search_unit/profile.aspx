@@ -81,12 +81,12 @@
         </tr>
         
         <tr>
+              <td style="width: 30%;" align="center">
+               </td>
             <td style="width: 30%;" align="center">
-                &nbsp;</td>
-            <td style="width: 30%;" align="center">
-                <a href="./generic_profile.aspx">
+             <a  href="./generic_profile.aspx">
                     <img alt="" src="../../../images/view.png" style="width: 100px; height: 100px" /></a>
-                     <br /><%Response.Write("( "+lt_mi_g+" )"); %>                 
+                     <br /><%Response.Write("( "+lt_mi_g+" )"); %>                
                      </td>
             <td style="width: 30%;" align="center">
                 &nbsp;</td>
@@ -94,9 +94,9 @@
         
         <tr>
             <td style="width: 30%;" align="center">
-                &nbsp;</td>
+               </td>
             <td style="width: 30%;" align="center">
-                <a href="./generic_profile.aspx">GENERIC APPLICATIONS</a></td>
+               <a href="./generic_profile.aspx">PRELIMINARY SEARCH</a></td>
             <td style="width: 30%;" align="center">
                 &nbsp;</td>
         </tr>

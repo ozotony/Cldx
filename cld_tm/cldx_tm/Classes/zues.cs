@@ -3978,6 +3978,38 @@ namespace cld.Classes
             return list;
         }
 
+        public List<XObjs.G_Tm_info> getG_Tm_infoByLogStaff(string xname)
+        {
+            List<XObjs.G_Tm_info> list = new List<XObjs.G_Tm_info>();
+            SqlConnection connection = new SqlConnection(this.Connect());
+            SqlCommand command = new SqlCommand("select * from g_tm_info LEFT OUTER JOIN g_pwallet ON g_tm_info.log_staff=g_pwallet.ID WHERE g_pwallet.stage='5' AND g_tm_info.log_staff =  '" + xname + "' ", connection)
+            {
+                CommandTimeout = 0
+            };
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+            while (reader.Read())
+            {
+                XObjs.G_Tm_info item = new XObjs.G_Tm_info
+                {
+                    xid = reader["xID"].ToString(),
+                    log_staff = reader["log_staff"].ToString(),
+                    visible = reader["visible"].ToString() ,
+                    logo_pic = reader["logo_pic"].ToString() ,
+                    reg_number = reader["reg_number"].ToString() ,
+                    tm_title = reader["tm_title"].ToString() ,
+                    tm_desc = reader["tm_desc"].ToString(),
+                    tm_class = reader["tm_class"].ToString(),
+                    xtype= reader["xtype"].ToString(),
+                    reg_date= reader["reg_date"].ToString()
+                };
+                list.Add(item);
+            }
+            reader.Close();
+            connection.Close();
+            return list;
+        }
+
         public string getG_TmOfficeByPID(string pwalletID)
         {
             string str = "";
@@ -4311,16 +4343,20 @@ namespace cld.Classes
         {
             List<XObjs.G_App_info> list = new List<XObjs.G_App_info>();
             SqlConnection connection = new SqlConnection(this.Connect());
+           // string str = "WITH RSTbl AS ( select g_tm_info.tm_title 'tm_title',g_tm_info.tm_class 'xclass', g_pwallet.log_officer,g_tm_info.reg_number,g_app_info.ID,g_app_info.rtm_number,g_app_info.application_no,g_app_info.item_code,g_app_info.filing_date,g_app_info.reg_no, ";
+           // string str2 = str + " g_app_info.reg_date,g_app_info.log_staff,g_app_info.visible, ROW_NUMBER() OVER (ORDER BY g_app_info.reg_date) AS 'RowRank' from g_app_info " + " LEFT OUTER JOIN g_tm_info ON g_app_info.log_staff=g_tm_info.log_staff ";
+           // string str3 = str2 + " LEFT OUTER JOIN g_pwallet ON g_app_info.log_staff=g_pwallet.ID WHERE (g_pwallet.stage='5' AND g_pwallet.status='" + status + "' AND g_pwallet.data_status='" + data_status + "' ) ";
+
             string str = "WITH RSTbl AS ( select g_tm_info.tm_title 'tm_title',g_tm_info.tm_class 'xclass', g_pwallet.log_officer,g_tm_info.reg_number,g_app_info.ID,g_app_info.rtm_number,g_app_info.application_no,g_app_info.item_code,g_app_info.filing_date,g_app_info.reg_no, ";
-            string str2 = str + " g_app_info.reg_date,g_app_info.log_staff,g_app_info.visible, ROW_NUMBER() OVER (ORDER BY g_app_info.reg_date) AS 'RowRank' from g_app_info " + " LEFT OUTER JOIN g_tm_info ON g_app_info.log_staff=g_tm_info.log_staff ";
-            string str3 = str2 + " LEFT OUTER JOIN g_pwallet ON g_app_info.log_staff=g_pwallet.ID WHERE (g_pwallet.stage='5' AND g_pwallet.status='" + status + "' AND g_pwallet.data_status='" + data_status + "' ) ";
+            string str2 = str + " g_app_info.reg_date,g_app_info.log_staff,g_app_info.visible from g_app_info " + " LEFT OUTER JOIN g_tm_info ON g_app_info.log_staff=g_tm_info.log_staff ";
+            string str3 = str2 + " LEFT OUTER JOIN g_pwallet ON g_app_info.log_staff=g_pwallet.ID WHERE g_pwallet.stage='5' AND g_pwallet.status='" + status + "' AND g_pwallet.data_status='" + data_status + "'  ";
             //SqlCommand command = new SqlCommand(str3 + " ) SELECT * FROM RSTbl  WHERE RowRank BETWEEN '" + start + "' AND '" + limit + "' ", connection)
             //{
             //    CommandTimeout = 300
             //};
 
 
-            SqlCommand command = new SqlCommand(string.Concat(new object[] { "select ''  as  description, g_tm_info.xID 'xID', g_tm_info.tm_title 'tm_title',g_tm_info.tm_class 'xclass', g_pwallet.log_officer,g_pwallet.applicantID,g_pwallet.validationID,g_tm_info.reg_number,g_applicant_info.xname ,g_app_info.ID,g_app_info.rtm_number,g_app_info.application_no,g_app_info.item_code ,g_app_info.filing_date,g_app_info.reg_no,g_app_info.reg_date,g_app_info.log_staff,g_app_info.visible from g_app_info " + " LEFT OUTER JOIN g_tm_info ON g_app_info.log_staff=g_tm_info.log_staff  LEFT OUTER JOIN g_pwallet ON g_app_info.log_staff=g_pwallet.ID left outer join g_applicant_info on g_applicant_info.log_staff =g_pwallet.ID  WHERE (g_pwallet.stage='5' AND g_pwallet.status= '" + status + "' AND g_pwallet.data_status='" + data_status + "'    )  order by  g_tm_info.xID ASC  " }), connection);
+            SqlCommand command = new SqlCommand(string.Concat(new object[] { "select       ''  as  description, g_tm_info.xID 'xID', g_tm_info.tm_title 'tm_title',g_tm_info.tm_class 'xclass', g_pwallet.log_officer,g_pwallet.applicantID,g_pwallet.validationID,g_tm_info.reg_number,g_applicant_info.xname ,g_app_info.ID,g_app_info.rtm_number,g_app_info.application_no,g_app_info.item_code ,g_app_info.filing_date,g_app_info.reg_no,g_app_info.reg_date,g_app_info.log_staff,g_app_info.visible from g_app_info " + " LEFT OUTER JOIN g_tm_info ON g_app_info.log_staff=g_tm_info.log_staff  LEFT OUTER JOIN g_pwallet ON g_app_info.log_staff=g_pwallet.ID left outer join g_applicant_info on g_applicant_info.log_staff =g_pwallet.ID  WHERE (g_pwallet.stage='5' AND g_pwallet.status= '" + status + "' AND g_pwallet.data_status='" + data_status + "'    )   " }), connection);
             connection.Open();
             SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
             string ssp = "";

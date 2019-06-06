@@ -233,6 +233,8 @@
     <Content Include="admin\tm\generic\Picz\3\yoda.jpg" />
     <Content Include="admin\tm\Re_examiners.aspx" />
     <Content Include="admin\tm\searcho3.aspx" />
+    <Content Include="admin\tm\search_unit\g_applications.aspx" />
+    <Content Include="admin\tm\search_unit\g_application_details.aspx" />
     <Content Include="admin\tm\signatures\Adeyemi.jpg" />
     <Content Include="admin\tm\signatures\Nkiru.jpg" />
     <Content Include="admin\tm\signatures\registrar_mini_png.png" />
@@ -290,6 +292,7 @@
     <Content Include="admin\tm\signatures\new_acceptance_sign.jpg" />
     <Content Include="admin\tm\signatures\signature.jpg" />
     <Content Include="admin\tm\Recordal2\g_application_detail2.aspx" />
+    <Content Include="admin\tm\s_data_details_report2.aspx" />
     <Content Include="admin\tm\verification_unit\appstatusc.aspx" />
     <Content Include="admin\tm\verification_unit\edit_apps2.aspx" />
     <Content Include="admin\tm\verification_unit\edit_status2.aspx" />
@@ -497,6 +500,7 @@
     <Content Include="js\smart-table.min.js" />
     <Content Include="js\sweet-alert.min.js" />
     <Content Include="js\tinymce.min.js" />
+    <Content Include="js\ui-bootstrap-tpls-0.14.3.min.js" />
     <Content Include="js\ui-bootstrap-tpls-1.3.3.min.js" />
     <Content Include="js\xeditable.min.js" />
     <Content Include="model\Model1.Context.tt">
@@ -517,6 +521,7 @@
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular-ui-router.min.js" />
     <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\Angular4\angular.min.js" />
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\App2.js" />
     <Content Include="Scripts\App3.js" />
@@ -524,6 +529,7 @@
     <Content Include="Scripts\App5.js" />
     <Content Include="Scripts\App6.js" />
     <Content Include="Scripts\App7.js" />
+    <Content Include="Scripts\App8.js" />
     <Content Include="Scripts\GetData.js" />
     <Content Include="Scripts\GetData2.js" />
     <Content Include="Scripts\GetData3.js" />
@@ -664,6 +670,7 @@
     <Content Include="Handlers\Paymenthandler.ashx" />
     <Content Include="Handlers\ApplicationOfficer.ashx" />
     <Content Include="Handlers\GetData9b.ashx" />
+    <Content Include="Handlers\AddEmail2.ashx" />
     <None Include="Web References\Ipo\gateway.wsdl" />
     <Content Include="Web References\Ipo\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
@@ -2040,6 +2047,20 @@
     <Compile Include="admin\tm\searcho3.aspx.designer.cs">
       <DependentUpon>searcho3.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\tm\search_unit\g_applications.aspx.cs">
+      <DependentUpon>g_applications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\tm\search_unit\g_applications.aspx.designer.cs">
+      <DependentUpon>g_applications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\tm\search_unit\g_application_details.aspx.cs">
+      <DependentUpon>g_application_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\tm\search_unit\g_application_details.aspx.designer.cs">
+      <DependentUpon>g_application_details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\tm\s_data_details_report.aspx.cs">
       <DependentUpon>s_data_details_report.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2190,6 +2211,13 @@
     </Compile>
     <Compile Include="admin\tm\Recordal2\g_application_detail2.aspx.designer.cs">
       <DependentUpon>g_application_detail2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\tm\s_data_details_report2.aspx.cs">
+      <DependentUpon>s_data_details_report2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\tm\s_data_details_report2.aspx.designer.cs">
+      <DependentUpon>s_data_details_report2.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\tm\verification_unit\appstatusc.aspx.cs">
       <DependentUpon>appstatusc.aspx</DependentUpon>
@@ -2829,6 +2857,9 @@
     </Compile>
     <Compile Include="Handlers\AddEmail.ashx.cs">
       <DependentUpon>AddEmail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\AddEmail2.ashx.cs">
+      <DependentUpon>AddEmail2.ashx</DependentUpon>
     </Compile>
     <Compile Include="Handlers\AppealRejection.ashx.cs">
       <DependentUpon>AppealRejection.ashx</DependentUpon>

@@ -2,13 +2,22 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"  data-ng-app="formApp">
 <head runat="server">
     <title></title>
     <link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 <script src="../../../js/funk.js" type="text/javascript"></script>
 
-<script type="text/javascript" src="../../../js/jquery-1.7.2.min.js"></script>
+        <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/angular.js"></script>
+    <script src="../../../Scripts/ng-wig.min.js"></script>
+    <link href="../../../css/ng-wig.css" rel="stylesheet" />
+    <script src="../../../js/sweet-alert.min.js"></script>
+    <link href="../../../css/sweet-alert.css" rel="stylesheet" />
+
+
+    <script src="../../../Scripts/App8.js"></script>
+
 <style type="text/css" >
 
 .xform td {
@@ -29,7 +38,7 @@
 
     </script>
 </head>
-<body>
+<body  ng-controller="formController2">
     <form id="form1" runat="server">
    <div>
     <div class="container">
@@ -579,7 +588,39 @@
                 &nbsp;
                 -- PREVIOUS ADMINISTRATOR'S COMMENT --</td>
         </tr>
-        <% Response.Write(xcomments); %>      
+        <% Response.Write(xcomments); %>   
+            
+
+                    <tr>
+            <td align="center" colspan="4">
+               
+                <asp:RadioButtonList ID="rbValid" runat="server" RepeatDirection="Vertical"  Width="200px"   AutoPostBack="True">
+                   
+                     <asp:ListItem Value="Ping">Send Applicant Email</asp:ListItem>
+                </asp:RadioButtonList>
+
+                 <table class="table tt2" id="rich"> 
+                 <tr>
+                  <td> <input id="emailaddress" size="100px" ng-model="EmailSubject" name="emailaddress" placeholder="Enter Email Subject" type="text" />  </td>
+
+              </tr>
+              <tr>
+                  <td> <textarea ng-wig="model.content"    ></textarea>  </td>
+
+              </tr>
+
+        <tr>
+                  <td>
+                      
+                      
+                      <input id="Button1" type="button" ng-click="add3(model.content)" value="Send Email" />  </td>
+
+              </tr>
+
+
+              </table>
+            </td>
+        </tr>
         
              
              
@@ -620,6 +661,7 @@
     </div>
 </div>
 </div>
+        <input id="xname5" name="xname5" type="hidden" runat="server" />
     </form>
 </body>
 </html>

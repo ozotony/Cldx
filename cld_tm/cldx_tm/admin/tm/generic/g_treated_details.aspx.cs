@@ -144,6 +144,7 @@ namespace cld.admin.tm.generic
 
                         if ((g_app_info.id != null) && (g_app_info.id != "")) { Session["g_app_info"] = g_app_info; }
                         g_applicant_info = ret.getG_Applicant_infoByPwalletID(g_pwallet.xid);
+                        xname5.Value = this.g_applicant_info.xemail;
 
                         if ((g_applicant_info.id != null) && (g_applicant_info.id != "")) { Session["g_applicant_info"] = g_applicant_info; }
                         g_agent_info = ret.getGenAgentByPwalletID(g_pwallet.xid);

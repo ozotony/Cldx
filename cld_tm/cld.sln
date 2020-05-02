@@ -1,25 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cld", "cldx_tm\cld.csproj", "{5EBC3192-351F-42AC-B83C-6C48DDCC1E8D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odyssey", "cldx_tm\RsaDAL\Odyssey.csproj", "{09212FE0-460A-4AC7-B0DA-CD5FB06D29D2}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://windows-gctg5nt:8080/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = cldx_tm\\cld.csproj
-		SccProjectName1 = cldx_tm
-		SccLocalPath1 = cldx_tm
-		SccProjectUniqueName2 = cldx_tm\\RsaDAL\\Odyssey.csproj
-		SccProjectName2 = cldx_tm/RsaDAL
-		SccLocalPath2 = cldx_tm\\RsaDAL
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
@@ -44,5 +32,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EFFE69D-B919-4C34-AF49-C8459A95E3B2}
 	EndGlobalSection
 EndGlobal

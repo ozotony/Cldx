@@ -49,6 +49,8 @@ namespace cld.Classes
         public string OLDAGENT_ADDRESS { get; set; }
         public string NEWAGENT_ADDRESS { get; set; }
         public string NEW_PRODUCT_LOGO { get; set; }
+        public string OLDCLASS { get; set; }
+        public string NEWCLASS { get; set; }
 
         public string LOGO_DESC { get; set; }
 

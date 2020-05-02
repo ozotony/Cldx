@@ -12,7 +12,7 @@
       <Value Profile="(Default)">http://41.194.96.187/cld/xtm.asmx</Value>
     </Setting>
     <Setting Name="cld_ws_payx_payx" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://tm.cldng.com/xtm/xservices/payx.asmx</Value>
+      <Value Profile="(Default)">http://tm.cldng.com/xservices/payx.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

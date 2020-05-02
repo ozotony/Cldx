@@ -220,6 +220,67 @@ namespace cld.Classes
             return ks;
         }
 
+        public Recordal_Result InsertRecordalClass(string old_class, string new_class, string logstaff, string vamount, string vtransid, string description)
+        {
+            string str = "";
+            Retriever ret2 = new Retriever();
+            XObjs.Pwallet pw = ret2.getPwalletByID2(logstaff);
+            SqlConnection connection = new SqlConnection(this.Connect());
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = "INSERT INTO Recordal (old_class,new_class,RECORDAL_REQUEST_DATE,RECORDAL_APPROVE_DATE,LOG_STAFF,STATUS,AMOUNT,TRANSACTIONID,RECORDAL_TYPE,data_status,data_status2,Description) VALUES (@old_class,@new_class,@RECORDAL_REQUEST_DATE,@RECORDAL_APPROVE_DATE,@LOG_STAFF,@STATUS,@AMOUNT,@TRANSACTIONID,@RECORDAL_TYPE,@data_status,@data_status2,@Description) SELECT SCOPE_IDENTITY()";
+            connection.Open();
+            command.Parameters.Add("@old_class", SqlDbType.VarChar, 500);
+            command.Parameters.Add("@new_class", SqlDbType.VarChar, 500);
+            command.Parameters.Add("@Description", SqlDbType.VarChar, 500);
+
+
+            command.Parameters.Add("@RECORDAL_REQUEST_DATE", SqlDbType.DateTime);
+            command.Parameters.Add("@RECORDAL_APPROVE_DATE", SqlDbType.DateTime);
+            command.Parameters.Add("@LOG_STAFF", SqlDbType.VarChar, 50);
+            command.Parameters.Add("@STATUS", SqlDbType.VarChar, 50);
+            command.Parameters.Add("@AMOUNT", SqlDbType.VarChar, 50);
+            command.Parameters.Add("@TRANSACTIONID", SqlDbType.VarChar, 50);
+            command.Parameters.Add("@RECORDAL_TYPE", SqlDbType.VarChar, 50);
+            command.Parameters.Add("@data_status", SqlDbType.VarChar, 50);
+            command.Parameters.Add("@data_status2", SqlDbType.VarChar, 50);
+
+            command.Parameters["@Description"].Value = description;
+            command.Parameters["@old_class"].Value = old_class;
+            command.Parameters["@new_class"].Value = new_class;
+            command.Parameters["@RECORDAL_REQUEST_DATE"].Value = DateTime.Now;
+            command.Parameters["@LOG_STAFF"].Value = logstaff;
+            command.Parameters["@STATUS"].Value = "Pending";
+            command.Parameters["@AMOUNT"].Value = vamount;
+            command.Parameters["@TRANSACTIONID"].Value = vtransid;
+            command.Parameters["@RECORDAL_TYPE"].Value = "ReClassification";
+            command.Parameters["@data_status"].Value = pw.data_status;
+            command.Parameters["@data_status2"].Value = pw.status;
+
+            foreach (SqlParameter Parameter in command.Parameters)
+            {
+                if (Parameter.Value == null)
+                {
+                    Parameter.Value = DBNull.Value;
+                }
+            }
+            try
+            {
+                str = command.ExecuteScalar().ToString();
+            }
+            catch(Exception ee)
+            {
+                string mess = ee.Message;
+            }
+            connection.Close();
+            update_RecordalStatus3(str, "1", "Recordal");
+            //  g_pwalletStatus(logstaff, "1", "Recordal");
+            string vf = getG_PwalletTransID(logstaff);
+            Recordal_Result ks = new Recordal_Result();
+            ks.Recordal_Id = str;
+            ks.TransactionId = vf;
+            return ks;
+        }
+
         public string  PendingAppeal(string docid, string regid, string comment, string agentid, string filepath)
         {
             string str = "";
@@ -1680,6 +1741,98 @@ namespace cld.Classes
             return str;
         }
 
+        public int updateMigrationEmail(string xid, string realemail)
+        {
+            int num = 0;
+            try
+            {
+                string connectionString = this.ConnectMigrate();
+                SqlConnection connection = new SqlConnection(connectionString);
+               
+                SqlCommand command = new SqlCommand("UPDATE xadminz_pt SET xemail=@realemail  WHERE xID=@encryptedemail  ", connection);
+
+         
+                connection.Open();
+                command.Parameters.Add("@encryptedemail", SqlDbType.Int);
+                command.Parameters.Add("@realemail", SqlDbType.NVarChar, 200);
+                command.Parameters["@encryptedemail"].Value = xid;
+                command.Parameters["@realemail"].Value = realemail;
+
+                string query = command.CommandText;
+
+                foreach (SqlParameter p in command.Parameters)
+                {
+                    query = query.Replace(p.ParameterName, p.Value.ToString());
+                }
+                num = command.ExecuteNonQuery();
+                connection.Close();
+
+            }
+
+            catch(Exception ee)
+            {
+               string  vmessage = ee.Message;
+                var dd = "";
+            }
+            return num;
+        }
+        public string CldMigrate( string serverpath)
+        {
+            List<Adminz> list = new List<Adminz>();
+            string xmlString = "Xavier";
+            int dwKeySize = 0x400;
+            string path = serverpath + @"\Handlers\bf.kez";
+            if (File.Exists(path))
+            {
+                StreamReader reader = new StreamReader(path, true);
+                xmlString = reader.ReadToEnd();
+                reader.Close();
+                if (xmlString != null)
+                {
+                    string oldValue = xmlString.Substring(0, xmlString.IndexOf("</BitStrength>") + 14);
+                    xmlString = xmlString.Replace(oldValue, "");
+                }
+            }
+            Odyssey.Odyssey odyssey = new Odyssey.Odyssey();
+            this.ConnectMigrate();
+            string str4 = "";
+            SqlConnection connection = new SqlConnection(this.ConnectMigrate());
+            SqlCommand command = new SqlCommand("select xID,xemail,xpass from xadminz_pt  ", connection)
+            {
+                CommandTimeout = 0
+            };
+            connection.Open();
+            SqlDataReader reader2 = command.ExecuteReader(CommandBehavior.CloseConnection);
+            while (reader2.Read())
+            {
+                var email = reader2["xemail"].ToString();
+
+               
+                Adminz item = new Adminz
+                {
+                    xID = reader2["xID"].ToString(),
+                    xemail = reader2["xemail"].ToString(),
+                    xpass = reader2["xpass"].ToString()
+                };
+                list.Add(item);
+            }
+            reader2.Close();
+            string str5 = "";
+            string str6 = "";
+            for (int i = 0; i < list.Count; i++)
+            {
+                str6 = odyssey.DecryptString(list[i].xemail, dwKeySize, xmlString);
+                str5 = odyssey.DecryptString(list[i].xpass, dwKeySize, xmlString);
+                string vemail = list[i].xemail;
+
+                updateMigrationEmail(list[i].xID, str6);
+
+
+            }
+            //  connection.Close();
+            return str4;
+        }
+
         public string a_xadminz(string uname, string xpass, string serverpath)
         {
             List<Adminz> list = new List<Adminz>();
@@ -1856,7 +2009,15 @@ namespace cld.Classes
             return ConfigurationManager.ConnectionStrings["xpayConnectionString"].ConnectionString;
         }
 
-       
+        public string ConnectMigrate()
+        {
+            return ConfigurationManager.ConnectionStrings["cldMigration"].ConnectionString;
+        }
+
+
+        
+
+
         public int e_Contact_formStatus(string xID, string sent_status)
         {
             SqlConnection connection = new SqlConnection(this.Connect());
@@ -2168,6 +2329,41 @@ namespace cld.Classes
 
             }
 
+            if (xk[0].RECORDAL_TYPE == "ReClassification")
+            {
+               // String vff = getApplicantName(vint);
+                SqlConnection connection = new SqlConnection(this.Connect());
+                SqlCommand command = connection.CreateCommand();
+                DateTime vv = DateTime.Now;
+                command.CommandText = "UPDATE Recordal SET RECORDAL_APPROVE_DATE=@sent_status,XOFFICER=@sent_status2,status=@status,Xcomment=@Xcomment WHERE ID=@xID ";
+                connection.Open();
+                command.Parameters.Add("@xID", SqlDbType.Int);
+                command.Parameters.Add("@sent_status", SqlDbType.DateTime);
+                command.Parameters.Add("@sent_status2", SqlDbType.NVarChar, 50);
+                command.Parameters.Add("@status", SqlDbType.NVarChar, 50);
+
+                command.Parameters.Add("@Xcomment", SqlDbType.NVarChar, 500);
+
+                command.Parameters["@xID"].Value = vint;
+                command.Parameters["@sent_status"].Value = vv;
+                command.Parameters["@sent_status2"].Value = sent_status;
+                command.Parameters["@status"].Value = "Approved";
+                command.Parameters["@Xcomment"].Value = xcomment;
+
+                num = command.ExecuteNonQuery();
+                connection.Close();
+
+
+                update_ClassStatus(xID, xk[0].NEWCLASS);
+
+                e_PwalletStatus(xID, xk[0].data_status2, xk[0].data_status);
+
+
+                //  e_PwalletStatus(xID, xk[0].data_status2, xk[0].data_status);
+                return num;
+
+            }
+
             if (xk[0].RECORDAL_TYPE == "registered_user")
             {
                 String vff = getApplicantName(vint);
@@ -2472,6 +2668,30 @@ namespace cld.Classes
             command.Parameters["@xID"].Value = xID;
             command.Parameters["@sent_status"].Value = sent_status;
            
+
+            int num = command.ExecuteNonQuery();
+            connection.Close();
+            return num;
+        }
+
+        public int update_ClassStatus(string xID, string classId)
+        {
+            // Int32 vint = getMaxId(xID);
+            string description = getClass2ById(classId);
+            SqlConnection connection = new SqlConnection(this.Connect());
+            SqlCommand command = connection.CreateCommand();
+            DateTime vv = DateTime.Now;
+            command.CommandText = "UPDATE mark_info SET nice_class=@niceclass,nice_class_desc=@nice_class_desc  WHERE log_staff=@xID ";
+            connection.Open();
+            command.Parameters.Add("@xID", SqlDbType.NVarChar, 50);
+            command.Parameters.Add("@niceclass", SqlDbType.NVarChar, 50);
+            command.Parameters.Add("@nice_class_desc", SqlDbType.NVarChar, 50);
+
+
+            command.Parameters["@xID"].Value = xID;
+            command.Parameters["@niceclass"].Value = classId;
+            command.Parameters["@nice_class_desc"].Value = description;
+
 
             int num = command.ExecuteNonQuery();
             connection.Close();
@@ -9253,7 +9473,13 @@ namespace cld.Classes
                               RECORDAL_TYPE3= "FORM 19";
                             }
 
-                            else if (reader["RECORDAL_TYPE"].ToString() == "Change_Rectification")
+                else if (reader["RECORDAL_TYPE"].ToString() == "ReClassification")
+                {
+
+                    RECORDAL_TYPE3 = "T019";
+                }
+
+                else if (reader["RECORDAL_TYPE"].ToString() == "Change_Rectification")
                             {
 
                                RECORDAL_TYPE3= "FORM 26";
@@ -9597,8 +9823,15 @@ namespace cld.Classes
                     RECORDAL_TYPE3 = "Change_Agent";
                 }
 
+                else if (reader["RECORDAL_TYPE"].ToString() == "ReClassification")
+                {
 
-               
+                    RECORDAL_TYPE3 = "T019";
+                }
+
+
+
+
 
                 XObjs.Office_view item = new XObjs.Office_view
                 {
@@ -9704,6 +9937,13 @@ namespace cld.Classes
                 {
 
                     RECORDAL_TYPE3 = "FORM 19";
+                }
+
+
+                else if (reader["RECORDAL_TYPE"].ToString() == "ReClassification")
+                {
+
+                    RECORDAL_TYPE3 = "T019";
                 }
 
                 else if (reader["RECORDAL_TYPE"].ToString() == "Change_Rectification")
@@ -11582,6 +11822,45 @@ namespace cld.Classes
             while (reader.Read())
             {
                 str = reader["addressID"].ToString();
+            }
+            reader.Close();
+            connection.Close();
+            return str;
+        }
+
+
+        public string getClassById(string id)
+        {
+            string str = "";
+            SqlConnection connection = new SqlConnection(this.Connect());
+            SqlCommand command = new SqlCommand("SELECT national_classID  from mark_info  where log_staff='" + id + "'", connection)
+            {
+                CommandTimeout = 0
+            };
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+            while (reader.Read())
+            {
+                str = reader["national_classID"].ToString();
+            }
+            reader.Close();
+            connection.Close();
+            return str;
+        }
+
+        public string getClass2ById(string id)
+        {
+            string str = "";
+            SqlConnection connection = new SqlConnection(this.Connect());
+            SqlCommand command = new SqlCommand("SELECT description  from national_classes  where type='" + id + "'", connection)
+            {
+                CommandTimeout = 0
+            };
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+            while (reader.Read())
+            {
+                str = reader["description"].ToString();
             }
             reader.Close();
             connection.Close();

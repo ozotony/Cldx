@@ -88,9 +88,9 @@
                     <img alt="" src="../../../images/view.png" style="width: 100px; height: 100px" /></a>
                       <br /><%Response.Write("( "+lt_gs2+" )");%></td>
             <td style="width: 30%;" align="center">
-               <%-- <a href="./g_applications.aspx">
+               <a href="./g_applications.aspx">
                     <img alt="" src="../../../images/view.png" style="width: 100px; height: 100px" /></a>
-                      <br /><%Response.Write("( "+lt_g+" )");%>--%></td>
+                      <br /><%Response.Write("( "+lt_g+" )");%></td>
         </tr>
         
         <tr>
@@ -99,7 +99,7 @@
             <td style="width: 30%;" align="center">
                   <a href="../Kiv_Data.aspx">KIV APPLICATIONS</a></td>
             <td style="width: 30%;" align="center">
-              <%-- <a href="./g_applications.aspx">GENERIC APPLICATIONS</a>--%></td>
+             <a href="./g_applications.aspx">GENERIC APPLICATIONS</a></td>
         </tr>
         
         <tr>

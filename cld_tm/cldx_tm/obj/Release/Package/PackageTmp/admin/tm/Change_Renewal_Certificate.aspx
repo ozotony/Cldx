@@ -131,7 +131,7 @@ The subsequent renewal due date for this trademark is on the <b>  <% Response.Wr
               
                 
 
-                <b>&nbsp;&nbsp;&nbsp;&nbsp; <% Response.Write(z.getAdminDetails(vd[0].OFFICER).xname.ToUpper()); %></b> <br/>
+                <b>&nbsp;&nbsp;&nbsp;&nbsp; <%  Response.Write(z.getAdminDetails(vd[0].OFFICER).xname.ToUpper());              %></b> <br/>
                 <b>&nbsp;&nbsp;&nbsp;&nbsp;  FOR: REGISTRAR,TRADE MARKS</b> <br/>
                
                 <br/>

@@ -868,6 +868,18 @@ function (isConfirm) {
         }
 
 
+
+        if (id.RECORDAL_TYPE == "ReClassification") {
+
+
+
+            window.open(
+                serviceBaseCld + "admin/tm/Generic_registrar_data_details4dd.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + id.oai_no + "&&Recordalid=" + id.RecordalID,
+                '_blank' // <- This is what makes it open in a new window.
+            );
+        }
+
+
         if (id.RECORDAL_TYPE == "Change_Assignment2") {
 
             

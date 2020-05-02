@@ -105,10 +105,17 @@
                 {
                     tm_img.ImageUrl = "./" + c_mark.logo_pic;
 
-                    //if (File.Exists(serverpath + "\\admin\\tm\\" + c_mark.logo_pic))
+                    //added
+                    //if (File.Exists("./" + c_mark.logo_pic))
+                    ////    if (File.Exists(serverpath + "\\admin\\tm\\" + c_mark.logo_pic))
                     //{
-                    //    tm_img.Height = new Unit(120, UnitType.Pixel);
-                    //    tm_img.Width = new Unit(120, UnitType.Pixel);
+                    //    // tm_img.Height = new Unit(120, UnitType.Pixel);
+                    //    // tm_img.Width = new Unit(120, UnitType.Pixel);
+
+                      
+
+                    //    tm_img.Height = new Unit(200, UnitType.Pixel);
+                    //    tm_img.Width = new Unit(141, UnitType.Pixel);
                     //    try
                     //    {
                     //        FileStream st = new FileStream(serverpath + "\\admin\\tm\\" + c_mark.logo_pic, FileMode.Open, FileAccess.Read);
@@ -120,13 +127,19 @@
 
                     //            if (Convert.ToInt32(ht) > Convert.ToInt32(wt))
                     //            {
-                    //                tm_img.Height = new Unit(320, UnitType.Pixel);
-                    //                tm_img.Width = new Unit(240, UnitType.Pixel);
+                    //               // tm_img.Height = new Unit(320, UnitType.Pixel);
+                    //               // tm_img.Width = new Unit(240, UnitType.Pixel);
+
+                    //                tm_img.Height = new Unit(200, UnitType.Pixel);
+                    //                tm_img.Width = new Unit(141, UnitType.Pixel);
                     //            }
                     //            else
                     //            {
-                    //                tm_img.Height = new Unit(240, UnitType.Pixel);
-                    //                tm_img.Width = new Unit(320, UnitType.Pixel);
+                    //               // tm_img.Height = new Unit(240, UnitType.Pixel);
+                    //               // tm_img.Width = new Unit(320, UnitType.Pixel);
+
+                    //                tm_img.Height = new Unit(141, UnitType.Pixel);
+                    //                tm_img.Width = new Unit(200, UnitType.Pixel);
                     //            }
                     //        }
                     //        else
@@ -147,6 +160,8 @@
                     //    // tm_img.Width = new Unit(120, UnitType.Pixel);
                     //    tm_img.Visible = false;
                     //}
+
+                    //added
 
 
                 }

@@ -288,9 +288,17 @@ namespace cld.admin.tm
                             Button1.Visible = true;
                         }
 
+                      
+
                         if (ddp.RECORDAL_TYPE == "Change_Name")
                         {
                             gen_nameHis(ddp);
+
+                        }
+
+                        if (ddp.RECORDAL_TYPE == "ReClassification")
+                        {
+                            gen_ClassHis(ddp);
 
                         }
 
@@ -689,6 +697,98 @@ namespace cld.admin.tm
 
             this.xrecordal = this.xrecordal + "<td align=\"left\" >";
             this.xrecordal = this.xrecordal + "<strong>" + vd.NEW_APPLICANTNAME + " </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+            this.xrecordal = this.xrecordal + "</tr>";
+
+
+            this.xrecordal = this.xrecordal + "<tr>";
+            this.xrecordal = this.xrecordal + "<td align=\"right\" >";
+            this.xrecordal = this.xrecordal + "<strong> REQUEST DATE </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+
+
+            this.xrecordal = this.xrecordal + "<td align=\"left\" >";
+            this.xrecordal = this.xrecordal + "<strong>" + vd.RECORDAL_REQUEST_DATE + " </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+            this.xrecordal = this.xrecordal + "</tr>";
+
+
+            this.xrecordal = this.xrecordal + "<tr>";
+            this.xrecordal = this.xrecordal + "<td align=\"right\" >";
+            this.xrecordal = this.xrecordal + "<strong> AMOUNT </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+
+
+            this.xrecordal = this.xrecordal + "<td align=\"left\" >";
+            this.xrecordal = this.xrecordal + "<strong>" + String.Format("{0:N}", vd.AMOUNT) + " </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+            this.xrecordal = this.xrecordal + "</tr>";
+
+
+            this.xrecordal = this.xrecordal + "<tr>";
+            this.xrecordal = this.xrecordal + "<td align=\"right\" >";
+            this.xrecordal = this.xrecordal + "<strong> TRANSACTION ID </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+
+
+            this.xrecordal = this.xrecordal + "<td align=\"left\" >";
+            this.xrecordal = this.xrecordal + "<strong>" + vd.TRANSACTIONID + " </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+            this.xrecordal = this.xrecordal + "</tr>";
+
+
+
+
+            //  return this.xrecordal;
+
+        }
+
+        public void gen_ClassHis(Recordal vd)
+        {
+
+            this.xrecordal = this.xrecordal + "<tr>";
+            this.xrecordal = this.xrecordal + "<td align=\"right\" >";
+            this.xrecordal = this.xrecordal + "<strong> RECORDAL TYPE </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+
+
+            this.xrecordal = this.xrecordal + "<td align=\"left\" >";
+            this.xrecordal = this.xrecordal + "<strong> T019 </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+            this.xrecordal = this.xrecordal + "</tr>";
+
+            this.xrecordal = this.xrecordal + "<tr>";
+            this.xrecordal = this.xrecordal + "<td align=\"right\" >";
+            this.xrecordal = this.xrecordal + "<strong> OLD CLASS </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+
+
+            this.xrecordal = this.xrecordal + "<td align=\"left\" >";
+            this.xrecordal = this.xrecordal + "<strong>" + vd.OLDCLASS + " </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+            this.xrecordal = this.xrecordal + "</tr>";
+
+
+            this.xrecordal = this.xrecordal + "<tr>";
+            this.xrecordal = this.xrecordal + "<td align=\"right\" >";
+            this.xrecordal = this.xrecordal + "<strong> NEW CLASS </strong>";
+
+            this.xrecordal = this.xrecordal + "</td>";
+
+
+            this.xrecordal = this.xrecordal + "<td align=\"left\" >";
+            this.xrecordal = this.xrecordal + "<strong>" + vd.NEWCLASS + " </strong>";
 
             this.xrecordal = this.xrecordal + "</td>";
             this.xrecordal = this.xrecordal + "</tr>";

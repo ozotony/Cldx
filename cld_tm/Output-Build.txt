@@ -1,3 +1,493 @@
 ﻿1>------ Build started: Project: cld, Configuration: Release Any CPU ------
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\EditAmendMentDetail.aspx.cs(4,7,4,10): warning CS0105: The using directive for 'cld' appeared previously in this namespace
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\index_cards.aspx.cs(132,42,132,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\generic\g_rep_ack.aspx.cs(105,50,105,52): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\AddEmail.ashx.cs(23,20,23,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\WaterMarks.ashx.cs(63,18,63,19): warning CS0168: The variable 'e' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdatePayment2.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdatePayment.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateClass2.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicantName.ashx.cs(19,20,19,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicantAddress.ashx.cs(17,20,17,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicant7.ashx.cs(28,20,28,26): warning CS0219: The variable 'vfile3' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicant7.ashx.cs(29,20,29,26): warning CS0219: The variable 'vfile4' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicant7.ashx.cs(30,20,30,26): warning CS0219: The variable 'vfile5' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicant7.ashx.cs(31,20,31,26): warning CS0219: The variable 'vfile6' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicant7.ashx.cs(32,20,32,26): warning CS0219: The variable 'vfile7' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicant7.ashx.cs(33,20,33,26): warning CS0219: The variable 'vfile8' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\generic\g_ack.aspx.cs(105,50,105,52): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\generic\edit_forms.aspx.cs(202,42,202,44): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicant3.ashx.cs(21,20,21,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicant2.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\UpdateApplicant.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\TestUpload.ashx.cs(91,25,91,28): warning CS0219: The variable 'ppx' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication7.ashx.cs(154,24,154,26): warning CS0219: The variable 'tp' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication7.ashx.cs(247,30,247,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication7.ashx.cs(20,20,20,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication7.ashx.cs(45,28,45,38): warning CS0219: The variable 'fu_sup_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication7.ashx.cs(47,28,47,41): warning CS0219: The variable 'fu_merger_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication7.ashx.cs(48,28,48,38): warning CS0219: The variable 'fu_ass_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication7.ashx.cs(197,20,197,22): warning CS0219: The variable 'sp' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication4.ashx.cs(150,30,150,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication4.ashx.cs(19,20,19,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication4.ashx.cs(29,28,29,38): warning CS0219: The variable 'fu_sup_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication4.ashx.cs(31,28,31,41): warning CS0219: The variable 'fu_merger_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication4.ashx.cs(32,28,32,38): warning CS0219: The variable 'fu_ass_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication4.ashx.cs(108,20,108,22): warning CS0219: The variable 'sp' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication3.ashx.cs(142,30,142,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication3.ashx.cs(19,20,19,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication3.ashx.cs(29,28,29,38): warning CS0219: The variable 'fu_sup_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication3.ashx.cs(31,28,31,41): warning CS0219: The variable 'fu_merger_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication3.ashx.cs(32,28,32,38): warning CS0219: The variable 'fu_ass_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication3.ashx.cs(100,20,100,22): warning CS0219: The variable 'sp' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\gf\xindex.aspx.cs(964,44,964,48): warning CS0219: The variable 'sss5' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(164,46,164,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(172,46,172,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(181,46,181,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(204,46,204,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(218,46,218,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(226,46,226,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(239,34,239,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(293,46,293,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(301,46,301,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(310,46,310,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(333,46,333,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(347,46,347,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(355,46,355,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps5.aspx.cs(368,34,368,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(204,46,204,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(212,46,212,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(221,46,221,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(244,46,244,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(258,46,258,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(266,46,266,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(279,34,279,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(317,46,317,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(325,46,325,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(334,46,334,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(357,46,357,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(371,46,371,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(379,46,379,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps4.aspx.cs(392,34,392,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_slip_data_details.cs(142,33,142,35): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_slip_data_details.cs(182,42,182,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetAGentInfo.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetAgentInfo2.ashx.cs(17,20,17,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetApplicant.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetApplicant2.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetApplicantAddress.ashx.cs(17,20,17,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetApplicantAddress3.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\edit_apps2.aspx.cs(199,46,199,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\edit_apps2.aspx.cs(207,46,207,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\edit_apps2.aspx.cs(216,46,216,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\edit_apps2.aspx.cs(239,46,239,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\edit_apps2.aspx.cs(253,46,253,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\edit_apps2.aspx.cs(261,46,261,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\edit_apps2.aspx.cs(274,34,274,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication2.ashx.cs(215,30,215,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication2.ashx.cs(19,20,19,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication2.ashx.cs(42,28,42,38): warning CS0219: The variable 'fu_sup_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication2.ashx.cs(44,28,44,41): warning CS0219: The variable 'fu_merger_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication2.ashx.cs(45,28,45,38): warning CS0219: The variable 'fu_ass_doc' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication2.ashx.cs(174,20,174,22): warning CS0219: The variable 'sp' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps3.aspx.cs(198,46,198,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps3.aspx.cs(206,46,206,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps3.aspx.cs(215,46,215,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps3.aspx.cs(238,46,238,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps3.aspx.cs(252,46,252,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps3.aspx.cs(260,46,260,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps3.aspx.cs(273,34,273,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\xind.aspx.cs(599,58,599,60): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\xind.aspx.cs(808,62,808,64): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\index_cards.aspx.cs(134,42,134,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\index_cards2.aspx.cs(145,42,145,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\index_cards2.aspx.cs(197,42,197,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\ntm_acknowledgement.aspx.cs(82,50,82,52): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetApplicantName.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetApplicantName2.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetApplicantName3.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetApplicantRectify.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetAuditReport.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetBranchCollectPayment2.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetCard.ashx.cs(75,24,75,27): warning CS0219: The variable 'xxp' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetCard2.ashx.cs(73,24,73,27): warning CS0219: The variable 'xxp' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetCertificate.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetClassById.ashx.cs(17,20,17,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetCld.ashx.cs(20,20,20,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetData19.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetEmail2.ashx.cs(18,20,18,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_unit\index_cards3.aspx.cs(136,42,136,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetEmailCount.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetEmail3.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetEmailCount2.ashx.cs(20,20,20,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetEmailCount4.ashx.cs(21,20,21,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetPayment.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetPwallet.ashx.cs(18,20,18,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\GetRecordal.ashx.cs(19,20,19,22): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\LoginCheck.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Publication.ashx.cs(29,24,29,33): warning CS0219: The variable 'batch_row' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\PublicationDetails.ashx.cs(33,19,33,21): warning CS0219: The variable 'ss' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication.ashx.cs(196,30,196,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication.ashx.cs(18,20,18,28): warning CS0219: The variable 'new_hash' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Handlers\Save_GenericApplication.ashx.cs(173,20,173,22): warning CS0219: The variable 'sp' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\UserDocs.cs(97,34,97,36): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\UserDocsMail.cs(198,129,198,134): warning CS0219: The variable 'x_msg' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Email.cs(52,21,52,38): warning CS0618: 'MailMessage.ReplyTo' is obsolete: 'ReplyTo is obsoleted for this type.  Please use ReplyToList instead which can accept multiple addresses. http://go.microsoft.com/fwlink/?linkid=14202'
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Email.cs(60,21,60,38): warning CS0618: 'MailMessage.ReplyTo' is obsolete: 'ReplyTo is obsoleted for this type.  Please use ReplyToList instead which can accept multiple addresses. http://go.microsoft.com/fwlink/?linkid=14202'
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\certification_unit\edit_app3.aspx.cs(189,46,189,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\certification_unit\edit_app3.aspx.cs(197,46,197,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\certification_unit\edit_app3.aspx.cs(206,46,206,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\certification_unit\edit_app3.aspx.cs(229,46,229,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\certification_unit\edit_app3.aspx.cs(243,46,243,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\certification_unit\edit_app3.aspx.cs(251,46,251,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\certification_unit\edit_app3.aspx.cs(264,34,264,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_slip_index_card2.aspx.cs(107,42,107,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps.aspx.cs(188,46,188,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps.aspx.cs(196,46,196,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps.aspx.cs(205,46,205,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps.aspx.cs(228,46,228,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps.aspx.cs(242,46,242,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps.aspx.cs(250,46,250,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\x_unit\edit_apps.aspx.cs(263,34,263,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Change_Assignment_Certificate.aspx.cs(178,42,178,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Change_Merger_Certificate.aspx.cs(179,42,179,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Change_Renewal_Certificate.aspx.cs(215,42,215,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details.aspx.cs(179,30,179,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\EditAmendMentDetail.aspx.cs(324,29,324,31): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\EditAmendMentDetail.aspx.cs(418,29,418,31): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4.aspx.cs(148,25,148,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4b.aspx.cs(145,25,145,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4c.aspx.cs(141,25,141,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4cc.aspx.cs(141,25,141,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4d.aspx.cs(161,25,161,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4dd.aspx.cs(303,46,303,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4dd.aspx.cs(312,46,312,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4dd.aspx.cs(160,25,160,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4e.aspx.cs(157,25,157,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4ee.aspx.cs(157,25,157,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details6.aspx.cs(146,17,146,20): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details6bb.aspx.cs(141,25,141,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details7.aspx.cs(141,17,141,20): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details7.aspx.cs(259,25,259,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details7.aspx.cs(638,30,638,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details8.aspx.cs(141,17,141,20): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(383,29,383,31): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(392,20,392,23): warning CS0219: The variable 'str' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(1045,30,1045,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\acceptance_slip_index_card.aspx.cs(119,42,119,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_detailsB.aspx.cs(177,30,177,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\publication_unit\index_cards.aspx.cs(132,42,132,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\publication_unit\journal.aspx.cs(106,42,106,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registered_user_Certificate.aspx.cs(154,42,154,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Change_Rectification_Certificate.aspx.cs(247,46,247,48): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Change_Rectification_Certificate.aspx.cs(310,46,310,48): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\generic\g_application_details.aspx.cs(500,42,500,44): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_c_data_details2.ascx.cs(175,42,175,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Registrar_Manual_Details.aspx.cs(103,46,103,48): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_Manual_details2.aspx.cs(103,46,103,48): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Registrar_Manual_Details.aspx.cs(197,50,197,52): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_Manual_details2.aspx.cs(197,50,197,52): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\search_unit\imp_recs.aspx.cs(149,34,149,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\search_unit\imp_recs.aspx.cs(278,34,278,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details4bb.aspx.cs(145,25,145,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\s_data_details_report.aspx.cs(106,42,106,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\s_data_details2_report.aspx.cs(107,42,107,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\UserDocs.cs(561,40,561,48): warning CS0219: The variable 'x_header' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\UserDocs.cs(561,62,561,74): warning CS0219: The variable 'x_gen_header' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\UserDocs.cs(561,109,561,115): warning CS0219: The variable 'x_body' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\UserDocs.cs(561,129,561,134): warning CS0219: The variable 'x_msg' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\UserDocs.cs(561,170,561,182): warning CS0219: The variable 'x_gen_footer' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\UserDocs.cs(656,129,656,134): warning CS0219: The variable 'x_msg' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\s_data_details_report2.aspx.cs(114,42,114,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\verification_unit\edit_apps2.aspx.cs(197,46,197,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\verification_unit\edit_apps2.aspx.cs(205,46,205,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\verification_unit\edit_apps2.aspx.cs(214,46,214,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\verification_unit\edit_apps2.aspx.cs(237,46,237,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\verification_unit\edit_apps2.aspx.cs(251,46,251,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\verification_unit\edit_apps2.aspx.cs(259,46,259,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\verification_unit\edit_apps2.aspx.cs(272,34,272,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\verification_unit\edit_status2.aspx.cs(130,41,130,43): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details6.aspx.cs(271,25,271,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details6.aspx.cs(662,30,662,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details8.aspx.cs(267,25,267,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details8.aspx.cs(652,30,652,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(1249,30,1249,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(1374,30,1374,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(1493,30,1493,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(1775,21,1775,23): warning CS0219: The variable 'dd' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(940,34,940,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(948,34,948,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(956,34,956,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(964,34,964,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(972,34,972,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(980,34,980,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(988,34,988,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(996,34,996,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1004,34,1004,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1012,34,1012,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1020,34,1020,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1028,34,1028,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1036,34,1036,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1044,34,1044,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1054,34,1054,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1065,34,1065,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1073,34,1073,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1082,34,1082,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1089,34,1089,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1097,34,1097,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1107,34,1107,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1117,34,1117,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1126,34,1126,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1136,34,1136,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1145,34,1145,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1154,34,1154,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1163,34,1163,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1172,34,1172,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1182,34,1182,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1191,34,1191,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1200,34,1200,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1209,34,1209,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1331,33,1331,35): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1340,34,1340,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1349,34,1349,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1358,34,1358,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1367,34,1367,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1376,34,1376,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1407,34,1407,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1416,34,1416,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1425,34,1425,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1434,34,1434,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1443,34,1443,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1452,34,1452,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details5.aspx.cs(1605,30,1605,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\opposition.aspx.cs(179,30,179,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(2112,20,2112,23): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(2137,20,2137,23): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(2163,20,2163,23): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1482,34,1482,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1490,34,1490,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1498,34,1498,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1506,34,1506,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1514,34,1514,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1522,34,1522,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1530,34,1530,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1538,34,1538,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1546,34,1546,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1554,34,1554,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1562,34,1562,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1570,34,1570,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1578,34,1578,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1589,34,1589,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1597,34,1597,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1606,34,1606,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1614,34,1614,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1622,34,1622,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1632,34,1632,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1642,34,1642,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1651,34,1651,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1660,34,1660,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1670,34,1670,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1679,34,1679,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1690,34,1690,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1699,34,1699,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1708,34,1708,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1717,34,1717,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1726,34,1726,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1736,34,1736,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1747,34,1747,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1756,34,1756,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1765,34,1765,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1774,34,1774,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1784,34,1784,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1795,34,1795,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1833,34,1833,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1842,34,1842,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1850,34,1850,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1858,34,1858,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1869,34,1869,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1877,34,1877,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1886,34,1886,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1896,34,1896,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1906,34,1906,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1915,34,1915,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1924,34,1924,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1933,34,1933,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1942,34,1942,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1951,34,1951,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1960,34,1960,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(1970,34,1970,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(2007,34,2007,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(2015,34,2015,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(2025,34,2025,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Retriever.cs(2034,34,2034,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Generic_registrar_data_details6b.aspx.cs(141,25,141,28): warning CS0219: The variable 'num' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\tm.cs(1156,43,1156,48): warning CS0219: The variable 'xsync' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\tm.cs(1638,29,1638,31): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(2953,20,2953,23): warning CS0219: The variable 'str' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\tm.cs(1859,38,1859,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(3420,20,3420,23): warning CS0219: The variable 'str' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Recordal2\edit_app2.aspx.cs(188,46,188,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Recordal2\edit_app2.aspx.cs(196,46,196,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Recordal2\edit_app2.aspx.cs(205,46,205,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Recordal2\edit_app2.aspx.cs(228,46,228,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Recordal2\edit_app2.aspx.cs(242,46,242,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Recordal2\edit_app2.aspx.cs(250,46,250,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\Recordal2\edit_app2.aspx.cs(263,34,263,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_unit\edit_apps2.aspx.cs(199,46,199,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_unit\edit_apps2.aspx.cs(207,46,207,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_unit\edit_apps2.aspx.cs(216,46,216,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_unit\edit_apps2.aspx.cs(239,46,239,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_unit\edit_apps2.aspx.cs(253,46,253,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_unit\edit_apps2.aspx.cs(261,46,261,48): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_unit\edit_apps2.aspx.cs(274,34,274,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\admin\tm\registrar_c_data_details.cs(170,42,170,44): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(1341,17,1341,42): warning CS0219: The variable 'g_applicant_info_updateID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2271,34,2271,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2279,34,2279,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2288,34,2288,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2297,34,2297,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2305,34,2305,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2313,34,2313,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2321,34,2321,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2329,34,2329,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2378,30,2378,39): warning CS0168: The variable 'exception' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(1855,43,1855,48): warning CS0219: The variable 'xsync' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\tm.cs(2347,38,2347,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\tm.cs(2050,50,2050,57): warning CS0168: The variable 'command' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(4529,34,4529,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(4604,34,4604,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(4674,34,4674,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(4744,34,4744,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2870,34,2870,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2879,34,2879,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2888,34,2888,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2897,34,2897,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2905,34,2905,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2913,34,2913,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2921,34,2921,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2929,34,2929,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(2409,43,2409,48): warning CS0219: The variable 'xsync' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3007,36,3007,39): warning CS0219: The variable 'pID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3011,20,3011,28): warning CS0219: The variable 'xvisible' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3011,43,3011,48): warning CS0219: The variable 'xsync' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3019,17,3019,27): warning CS0219: The variable 'app_addyID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3021,17,3021,27): warning CS0219: The variable 'rep_addyID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3022,17,3022,28): warning CS0219: The variable 'cert_infoID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3240,21,3240,23): warning CS0219: The variable 'bb' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3269,34,3269,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3394,34,3394,36): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3421,34,3421,36): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3451,34,3451,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3487,34,3487,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3527,34,3527,36): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(5113,20,5113,23): warning CS0219: The variable 'str' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3567,34,3567,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3675,34,3675,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3684,34,3684,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3693,34,3693,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3702,34,3702,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3724,34,3724,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3744,34,3744,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3764,34,3764,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3784,34,3784,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3816,30,3816,39): warning CS0168: The variable 'exception' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3645,36,3645,39): warning CS0219: The variable 'pID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3649,20,3649,28): warning CS0219: The variable 'xvisible' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3649,43,3649,48): warning CS0219: The variable 'xsync' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3657,17,3657,27): warning CS0219: The variable 'app_addyID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3659,17,3659,27): warning CS0219: The variable 'rep_addyID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3660,17,3660,28): warning CS0219: The variable 'cert_infoID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3895,34,3895,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3904,34,3904,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3913,34,3913,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3922,34,3922,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3944,34,3944,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3964,34,3964,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3984,34,3984,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(4004,34,4004,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(4036,30,4036,39): warning CS0168: The variable 'exception' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3865,36,3865,39): warning CS0219: The variable 'pID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3869,20,3869,28): warning CS0219: The variable 'xvisible' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3869,43,3869,48): warning CS0219: The variable 'xsync' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3877,17,3877,27): warning CS0219: The variable 'app_addyID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3879,17,3879,27): warning CS0219: The variable 'rep_addyID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(3880,17,3880,28): warning CS0219: The variable 'cert_infoID' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\Registration.cs(4140,30,4140,32): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(6969,34,6969,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7070,34,7070,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7020,20,7020,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7171,34,7171,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7121,20,7121,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7276,34,7276,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7225,20,7225,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7383,34,7383,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7331,20,7331,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7490,34,7490,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7438,20,7438,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7596,34,7596,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7545,20,7545,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7717,34,7717,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7665,20,7665,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7801,38,7801,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7755,24,7755,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7878,38,7878,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7834,24,7834,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7954,38,7954,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7908,24,7908,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8030,38,8030,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(7984,24,7984,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8106,38,8106,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8060,24,8060,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8199,38,8199,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8153,24,8153,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8276,38,8276,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8232,24,8232,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8352,38,8352,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8306,24,8306,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8428,38,8428,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8382,24,8382,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8504,38,8504,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8458,24,8458,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8580,38,8580,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8534,24,8534,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8675,38,8675,40): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8629,24,8629,31): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8791,34,8791,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8739,20,8739,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8894,34,8894,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8842,20,8842,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8997,34,8997,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(8945,20,8945,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9100,34,9100,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9048,20,9048,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9205,34,9205,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9152,20,9152,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9293,34,9293,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9222,24,9222,31): warning CS0168: The variable 'command' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9246,20,9246,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9381,34,9381,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9325,20,9325,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9562,34,9562,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9433,20,9433,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9723,34,9723,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9614,20,9614,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9876,34,9876,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9753,20,9753,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10016,34,10016,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(9907,20,9907,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10148,34,10148,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10046,20,10046,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10239,34,10239,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10178,20,10178,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10314,34,10314,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10269,20,10269,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10415,34,10415,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10366,20,10366,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10515,34,10515,36): warning CS0168: The variable 'ee' is declared but never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(10466,20,10466,27): warning CS0219: The variable 'voffice' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(11713,20,11713,23): warning CS0219: The variable 'str' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(11737,20,11737,23): warning CS0219: The variable 'str' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(11786,20,11786,23): warning CS0219: The variable 'str' is assigned but its value is never used
+1>C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\Classes\zues.cs(12041,29,12041,31): warning CS0168: The variable 'ee' is declared but never used
 1>  cld -> C:\Einao\VS Source\Projects\cldx_Backup\cld_tm\cldx_tm\bin\cld.dll
 ========== Build: 1 succeeded, 0 failed, 1 up-to-date, 0 skipped ==========

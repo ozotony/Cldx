@@ -1662,6 +1662,27 @@ namespace cld.Classes
 
                 }
 
+
+                try
+                {
+                    pp.OLDCLASS = reader["old_class"].ToString();
+                }
+                catch (Exception ee)
+                {
+
+                }
+
+                try
+                {
+                    pp.NEWCLASS = reader["new_class"].ToString();
+                }
+                catch (Exception ee)
+                {
+
+                }
+
+
+
                 try
                 {
                     pp.OLD_PRODUCT_TITLE = reader["OLD_PRODUCT_TITLE"].ToString();

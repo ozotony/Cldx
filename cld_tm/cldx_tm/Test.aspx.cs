@@ -21,10 +21,12 @@ namespace cld
            
                 try
                 {
+                    zues kt = new zues();
+                    kt.CldMigrate(base.Server.MapPath("~/"));
 
-                    var kk = Encrypt3.EncryptString("patATTAH3#", "patATTAH3#");
-                    var kk2 = Encrypt3.DecryptString(kk, "patATTAH3#");
-                    var pp = kk2;
+                  //  var kk = Encrypt3.EncryptString("patATTAH3#", "patATTAH3#");
+                  //  var kk2 = Encrypt3.DecryptString(kk, "patATTAH3#");
+                  //  var pp = kk2;
 
 
                 }

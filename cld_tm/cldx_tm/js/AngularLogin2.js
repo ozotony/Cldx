@@ -2,7 +2,9 @@
 
 var serviceBaseIpo = 'http://ipo.cldng.com/';
 
-var serviceBaseCld = 'http://tm.cldng.com/';
+//var serviceBaseCld = 'http://tm.cldng.com/';
+//var serviceBaseCld = "http://5.77.54.44/EinaoTestEnvironment.CLD/";
+var serviceBaseCld = 'http://localhost:49703/';
 
 app.controller('myController', ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
 
@@ -1161,6 +1163,181 @@ function (isConfirm) {
         swal("Cancelled", "Action Canceled :)", "error");
     }
 });
+
+
+
+
+    }
+    //When you have entire dataset
+
+
+
+}]);
+
+
+
+app.controller('myController8', ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
+
+    $scope.BranchCollect = [];
+    $scope.itemsPerPage = 10;
+    $scope.currentPage = 0;
+    $scope.items = [];
+    $scope.isDisabled = false;
+    var url3 = serviceBaseIpo + 'Handlers/GetRegistration2.ashx';
+
+    // var url3 = ' http://localhost:21936/home/GetAgent';
+
+
+    GetCountries();
+    function GetCountries() {
+        $http({
+            method: 'GET',
+            url: serviceBaseCld + 'Handlers/GetClass.ashx'
+        }).success(function (data, status, headers, config) {
+            var dd = data;
+            $scope.countries = data;
+            $scope.countries2 = [];
+
+            angular.forEach($scope.countries, function (value, key) {
+                value.description = value.type
+                $scope.countries2.push(value);
+                console.log("countries")
+                console.log($scope.countries2)
+            });   
+        }).error(function (data, status, headers, config) {
+            $scope.message = 'Unexpected Error';
+        });
+    }
+
+
+    $(document).ready(function () {
+        var xname = $("input#xname").val();
+       
+
+       $scope.xname4 = $("input#xname").val();
+      
+        $scope.xname5 = $("input#vamount").val();
+       
+        $scope.xname6 = $("input#vtranid").val();
+      
+        $scope.xname6a = $("input#vtype").val();
+       
+
+       
+
+
+        var Encrypt = {
+            vv: xname
+        }
+        var formData = new FormData();
+        formData.append("vv", xname);
+        $http({
+            method: 'POST',
+            url: serviceBaseCld + 'Handlers/GetClassById.ashx',
+            transformRequest: function (obj) {
+                var str = [];
+                for (var p in obj)
+                    str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+                return str.join("&");
+            },
+            data: Encrypt,
+
+            //Convert the Observable Data into JSON
+
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8;' }
+            //JSON.stringify({ vid: countryId })
+        }).success(function (response) {
+            var content = JSON.parse(response);
+            //  alert(content)
+            $scope.Applicantclass = content
+           
+
+            //  $scope.states = data;
+        }).error(function (data, status, headers, config) {
+            $scope.message = 'Unexpected Error';
+        });
+
+
+
+    });
+
+
+    $scope.submitForm = function () {
+
+        if ($scope.ApplicantNewClass == null) {
+            swal(" New  Class Cannot Be Null", "error");
+
+            return
+
+        }
+
+
+        swal({
+            title: "UPDATE RECLASSIFICATION",
+            text: "CONTINUE WITH RECLASSIFICATION",
+            type: "success",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55", confirmButtonText: "PROCEED!",
+            cancelButtonText: "No!",
+            closeOnConfirm: true,
+            closeOnCancel: true
+        },
+            function (isConfirm) {
+                if (isConfirm) {
+
+                    var Encrypt = {
+                        vv: $scope.Applicantclass,
+                        vv2: $scope.ApplicantNewClass,
+                        vv3: $scope.xname4,
+                        vv4: $scope.xname5,
+                        vv5: $scope.xname6,
+                        vv6: $scope.description
+
+                    }
+
+                    alert("about")
+                    console.log(Encrypt)
+                  
+
+                    $http({
+                        method: 'POST',
+                        url: serviceBaseCld + 'Handlers/UpdateClass2.ashx',
+                        transformRequest: function (obj) {
+                            var str = [];
+                            for (var p in obj)
+                                str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+                            return str.join("&");
+                        },
+                        data: Encrypt,
+
+                        //Convert the Observable Data into JSON
+
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8;' }
+                        //JSON.stringify({ vid: countryId })
+                    }).success(function (response) {
+
+                        //  var content = JSON.parse(response);
+                        alert("Submitted Sucessfully")
+                        if ($scope.xname6a == "backend") {
+                         //   window.location.href = serviceBaseCld + "admin/tm/Generic_registrar_data_details4bb.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + response.TransactionId + "&&Recordalid=" + response.Recordal_Id;
+
+                        }
+
+                        else {
+                         //   window.location.href = serviceBaseCld + "admin/tm/Generic_registrar_data_details4b.aspx?0001234445XXX43943OPFDSMZXUHSJFDSKFGKSDKGFSDKFSKFDKFD=" + response.TransactionId + "&&Recordalid=" + response.Recordal_Id;
+
+                        }
+                        //     
+                    }).error(function (data, status, headers, config) {
+                        $scope.message = 'Unexpected Error';
+                    });
+
+
+
+                } else {
+                    swal("Cancelled", "Action Canceled :)", "error");
+                }
+            });
 
 
 
